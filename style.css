@@ -1,9 +1,8 @@
-p{
-    display: block;
-    margin:auto;
-}
-html,body{
-    background-color: antiquewhite;
+body {
+  background-color: rgb(165, 216, 237);
+  max-width: 640px;
 }
 
-/* #393939; */
+h2 {
+  margin-top: 50px;
+}
