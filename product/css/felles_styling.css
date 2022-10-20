@@ -38,7 +38,7 @@ header {
   flex-wrap: wrap;
   gap: 0.4rem 0rem;
 }
-.hovedkategori > a {
+/* .hovedkategori > a {
   padding: 0.2rem 1rem 0.2rem 1rem;
   color: white;
   font-size: 1.2rem;
@@ -55,6 +55,27 @@ header {
   background-color: white;
   color: black;
   text-decoration: none;
+} */
+a.hovedkategori {
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  font-size: 1.2rem;
+}
+a.hovedkategori:link, 
+a.hovedkategori:visited{
+  color: white;
+  text-decoration: none;
+}
+a.hovedkategori:hover {
+  text-decoration: underline;
+}
+a.hovedkategori:active{
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+.styremedlem img{
+  height: 200px;
+  width: 200px;
 }
 
 main {
