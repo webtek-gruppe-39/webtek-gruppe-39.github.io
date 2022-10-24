@@ -74,7 +74,7 @@ hook.append(p)
 Z.qs('#flexContainer').append(hook)
 
 // set active cursor on name field
-name.focus()
+name.focus({preventScroll: true})
 
 // log
 submit.addEventListener('click', () => { console.log('Bli-medlem-skjemaet er sendt på kødd!')})
