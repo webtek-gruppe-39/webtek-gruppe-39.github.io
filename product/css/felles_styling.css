@@ -84,7 +84,7 @@ footer {
   margin-top: auto;
   background-color: var(--darkBlue);
   width: 100%;
-  border: 2px solid rgb(142, 142, 235);
+  border: 2px solid;
   font-size: 1em;
   font-weight: bold;
   color: white;
