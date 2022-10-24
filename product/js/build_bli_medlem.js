@@ -17,7 +17,7 @@ c.id = 'flexContainer'
 c.classList.add('container')
 Z.qs('main').append(c)
 
-// om medlemsskap
+// section 1: om medlemsskap
 let bait = H.div()
 bait.classList.add('item', 'bait')
 h3 = H.tag('h3')
@@ -27,20 +27,23 @@ p.textContent = lorem
 bait.append(h3, p)
 Z.qs('#flexContainer').append(bait)
 
-// meld deg inn her
+// section 2: meld deg inn her
 let hook = H.div()
 hook.classList.add('item', 'hook')
+
+// tittel
 h3 = H.tag('h3')
-p = H.tag('p')
 h3.textContent = '🪝 Meld deg inn her'
+// prefix
+p = H.tag('p')
 p.textContent = 'Vennligst fyll ut din info under.'
+// append
 hook.append(h3, p)
 
 // skjema
-
 let s = H.div()
 s.id = 'signupForm'
-
+// input fields
 let name, birthdateLabel, birthdate, motivation, email, submit
 name = H.input('name', 'text', 'Navn')
 birthdateLabel = H.label('birthdate', 'Født')
@@ -51,8 +54,9 @@ motivation.id = 'motivation'
 motivation.placeholder = 'Motivasjon'
 email = H.input('email', 'email', 'E-post')
 submit = H.tag('button')
-submit.id = 'signupFormSubmit'
-
+submit.id = 'submit'
+submit.textContent ='Send'
+// bygg skjema
 s.append(
   name, H.tag('br'),
   birthdateLabel, birthdate, H.tag('br'),
@@ -61,10 +65,16 @@ s.append(
   submit
 )
 hook.append(s)
+
+// postfix
+p = H.tag('p')
+p.textContent = 'Vi tar kontakt med deg ved neste opptaksrituale!'
+hook.append(p)
+
 Z.qs('#flexContainer').append(hook)
 
+// set active cursor on name field
+name.focus()
 
-
-
-
-// input field .focus()
+// log
+submit.addEventListener('click', () => { console.log('Bli-medlem-skjemaet er sendt på kødd!')})

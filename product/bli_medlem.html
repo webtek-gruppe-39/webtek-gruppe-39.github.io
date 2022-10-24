@@ -37,10 +37,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: flex-start;
         align-content: space-between;
       }
       .item {
-        padding: 1rem;
+        padding: 1.15rem;
         background-color: white;
       }
 
@@ -58,27 +59,42 @@
         white-space: pre-wrap;
         text-align: justify;
         line-height: 1.15rem;
+        margin: 0.5rem 0 0.5rem 0;
       }
 
-      input, textarea {
+      input, textarea, button {
         appearance: none; -webkit-appearance: none;
         border: solid black 1px;
         border-radius: 0;
-        padding: 0 1px 0 1px; /* caret position */
-        font-size: inherit; font-family: inherit;
-        height: 1.3rem; /* 21px */
+        padding: 3px 4px 3px 4px; /* caret position */
+        background-color: inherit; font-size: inherit; font-family: inherit;
+        resize: none;
+        font-style: italic;
       }
+      
 
-      /* input::placeholder, textarea::placeholder { color: black; } */
-
-      #signupForm { line-height: 2rem; width: 100%;}
+      #signupForm {
+        width: 100%;
+        line-height: 2.5rem;
+      }
       #birthdateLabel { padding-right: 1ch; }
       #motivation {
         width: 100%;
-        height: 7rem;
+        height: 10rem;
       }
-
-
+      #submit {
+        background-color: black;
+        color: white;
+        padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+        font-style: normal;
+      }
+      #submit::placeholder, textarea::placeholder { color: black; }
+      #submit:hover { cursor:grab; }
+      #submit:active {
+        cursor: grabbing;
+        background-color: white;
+        color: black;
+      }
     </style>
 
     <script src='js/build_bli_medlem.js' type='module'></script>
