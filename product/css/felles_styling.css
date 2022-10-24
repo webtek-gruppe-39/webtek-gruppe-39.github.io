@@ -120,3 +120,26 @@ footer {
   width: 200px;
   border-radius: 50%;
 }
+
+
+#nav{
+  background-color: rgba(0,0,0,0.75);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  height: 5rem;
+  padding-top: 2rem;
+}
+
+#nav .hovedkategori{
+  font-size: 2rem;
+}
+
+#forsidecont{
+  height: 100%;
+  background-color: #cccccc;
+  background-image: linear-gradient(red,yellow);
+  /* background-image: linear-gradient(rgb(211, 252, 255), rgb(5, 50, 101)); */
+}
