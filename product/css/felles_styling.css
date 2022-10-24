@@ -100,6 +100,7 @@ footer {
   display: inline-block;
   margin-right: 80px;
   margin-left: 80px;
+  padding-top: 50px;
 }
 .styremedlem img{
   height: 200px;
@@ -119,3 +120,24 @@ footer {
   width: 200px;
   border-radius: 50%;
 }
+
+
+#nav{
+  background-color: rgba(0,0,0,0.75);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  height: 5rem;
+  padding-top: 2rem;
+}
+
+#nav .hovedkategori{
+  font-size: 2rem;
+  background-color: transparent;
+}
+
+
+
+
