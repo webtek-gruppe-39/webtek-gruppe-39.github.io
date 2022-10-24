@@ -21,18 +21,61 @@
     <main>
 
 
-      
+
 
     <style>
-      main {
-        margin-left: auto; 
-        margin-right: auto;}
-      section { margin: 1rem; }
+      main { text-align: left; }
+      .title {
+        margin: 3rem;
+        text-align: center;
+      }
+      .container {
+        margin: 3rem; gap: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+      }
+      .item {
+        padding: 1rem;
+        background-color: white;
+      }
+
+      /* Keep left margin from centering 
+      when less than a full line of text 
+      is present. */
+      .item { width: 50ch; /* 50–80ch */ }
+      @media screen and (max-width: 50ch) { 
+        .item { width: 100%; } 
+      }
+
+      h3 { padding-bottom: 0.3rem; }
+
       p {
-        width: 60ch;
         white-space: pre-wrap;
         text-align: justify;
+        line-height: 1.15rem;
       }
+
+      input, textarea {
+        appearance: none; -webkit-appearance: none;
+        border: solid black 1px;
+        border-radius: 0;
+        padding: 0 1px 0 1px; /* caret position */
+        font-size: inherit; font-family: inherit;
+        height: 1.3rem; /* 21px */
+      }
+
+      /* input::placeholder, textarea::placeholder { color: black; } */
+
+      #signupForm { line-height: 2rem; width: 100%;}
+      #birthdateLabel { padding-right: 1ch; }
+      #motivation {
+        width: 100%;
+        height: 7rem;
+      }
+
+
     </style>
 
     <script src='js/build_bli_medlem.js' type='module'></script>
