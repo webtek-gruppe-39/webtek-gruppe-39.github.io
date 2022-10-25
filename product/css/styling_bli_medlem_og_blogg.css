@@ -55,7 +55,7 @@ p {
 }
 #insta { height: 440px;}
 #insta > iframe { height: inherit; }
-@media screen and (min-width: 896px) {
+@media screen and (min-width: 832px) {
   #insta {
     position: sticky;
     --headerHeight: 100px;
