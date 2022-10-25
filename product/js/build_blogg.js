@@ -39,7 +39,7 @@ const newBlogPost = (title, metadata, content) => {
   m = H.tag('p'); m.classList.add('metadata')
   c = H.tag('p')
   t.textContent = title
-  m.textContent = metadata
+  m.textContent = metadata + '\n---------------------------------------'
   c.textContent = content
   bp.append(t, m, c)
   return bp
