@@ -15,6 +15,7 @@ H.input = (name, type, placeholder) => {
   i.name = name
   i.type = type
   i.placeholder = placeholder
+  i.required = true
   return i
 }
 Z.qs = (selector)=>{ return document.querySelector(selector) }
