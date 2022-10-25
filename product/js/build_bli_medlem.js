@@ -77,4 +77,4 @@ Z.qs('#flexContainer').append(hook)
 name.focus({preventScroll: true})
 
 // log
-submit.addEventListener('click', () => { console.log('Bli-medlem-skjemaet er sendt på kødd!')})
+submit.addEventListener('click', () => { alert('Bli-medlem-skjemaet er sendt på kødd!')})
