@@ -36,7 +36,7 @@ const newBlogPost = (title, metadata, content) => {
   let bp, t, m, c
   bp = H.div(); bp.classList.add('item', 'blogpost')
   t = H.tag('h2')
-  m = H.tag(p); m.classList.add('metadata')
+  m = H.tag('p'); m.classList.add('metadata')
   c = H.tag('p')
   t.textContent = title
   m.textContent = metadata
