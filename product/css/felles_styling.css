@@ -45,9 +45,13 @@ header {
   flex-wrap: wrap;
   gap: 0rem 0rem;
 }
+/* mobil */
 @media screen and (max-width: 500px) {
   #navbar { display: none; }
-  header { justify-content: center; }
+  header {
+    justify-content: center;
+    position: absolute; top: 0;
+  }
 }
 a.hovedkategori {
   padding: 0.2rem 1rem 0.2rem 1rem;

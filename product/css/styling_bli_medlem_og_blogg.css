@@ -75,6 +75,7 @@ input, textarea, button {
 input::placeholder, textarea::placeholder { color: black; }
 
 #signupForm { line-height: 2.5rem; }
+.hook > p { text-align: left; }
 #birthdateLabel { padding-right: 1ch; }
 #motivation {
   width: 100%;
