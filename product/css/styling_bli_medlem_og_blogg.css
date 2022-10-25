@@ -1,4 +1,9 @@
-main { text-align: left; }
+/* bli_medlem og blogg */
+
+main {
+  text-align: left; /* undo global */
+  margin-bottom: 100px;
+} 
 
 .title {
   margin: 3rem;
@@ -6,7 +11,9 @@ main { text-align: left; }
 }
 
 .container {
-  margin: 3rem; gap: 3rem;
+  margin-top: 2rem; 
+  margin-bottom: 2rem;
+  gap: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,13 +33,34 @@ is present. */
   .item { width: 100%; } 
 }
 
+h2 { padding-bottom: 0.3rem; }
 h3 { padding-bottom: 0.3rem; }
-
 p {
   white-space: pre-wrap;
   text-align: justify;
   line-height: 1.15rem;
   margin: 0.5rem 0 0.5rem 0;
+}
+
+.metadata {
+  font-family: monospace;
+  font-size: 0.75rem;
+}
+
+
+#blogs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#insta { height: 440px;}
+#insta > iframe { height: inherit; }
+@media screen and (min-width: 896px) {
+  #insta {
+    position: sticky;
+    --headerHeight: 100px;
+    top: var(--headerHeight);
+  }
 }
 
 input, textarea, button {

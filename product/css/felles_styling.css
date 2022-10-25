@@ -37,13 +37,17 @@ header {
   height: 100%;
 }
 #navbar {
-  padding: 1rem;
+  padding: 2rem;
 
   display: flex;
   justify-content: flex-end;
   align-content: center;
   flex-wrap: wrap;
-  gap: 0.4rem 0rem;
+  gap: 0rem 0rem;
+}
+@media screen and (max-width: 500px) {
+  #navbar { display: none; }
+  header { justify-content: center; }
 }
 a.hovedkategori {
   padding: 0.2rem 1rem 0.2rem 1rem;

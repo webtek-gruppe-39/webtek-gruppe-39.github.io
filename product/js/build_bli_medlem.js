@@ -30,7 +30,6 @@ Z.qs('#flexContainer').append(bait)
 // section 2: meld deg inn her
 let hook = H.div()
 hook.classList.add('item', 'hook')
-
 // tittel
 h3 = H.tag('h3')
 h3.textContent = '🪝 Meld deg inn her'
@@ -39,7 +38,6 @@ p = H.tag('p')
 p.textContent = 'Vennligst fyll ut din info under.'
 // append
 hook.append(h3, p)
-
 // skjema
 let s = H.div()
 s.id = 'signupForm'
@@ -65,12 +63,10 @@ s.append(
   submit
 )
 hook.append(s)
-
 // postfix
 p = H.tag('p')
 p.textContent = 'Vi tar kontakt med deg ved neste opptaksrituale!'
 hook.append(p)
-
 Z.qs('#flexContainer').append(hook)
 
 // set active cursor on name field
