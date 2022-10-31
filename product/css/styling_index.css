@@ -67,11 +67,15 @@ h1{
   
     z-index: -999;
   }
-  #logobakgrunn{
+  #logoindex{
     width: 50%;
     height: 50%;
     position:fixed;
     left: 25%;
     top: 15%;
+    transition: transform .7s ease-in-out;
+  }
+  img:hover{
+    transform: rotate(360deg);
   }
  
