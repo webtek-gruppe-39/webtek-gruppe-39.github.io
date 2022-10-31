@@ -1,29 +1,165 @@
 <!DOCTYPE html>
-<html lang="nb">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/felles_styling.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Klubbstatistikk</title>
-    </head>
-    <body>
-        <header>
-            <div id="logo">
-                <a href="forside.html" ><img src="img/lysing_logo_lys.png" height="100px"></a>
-            </div>
-       
-            <div id="navbar">
-                
-                <a class ="hovedkategori" href="om_klubben.html">Om klubben</a>
-                <a class="hovedkategori" href="utlaan_utstyr.html">Utlån av utstyr</a>
-                <a class="hovedkategori" href="klubbstatistikk.html">Klubbstatistikk</a>
-                <a class="hovedkategori" href="fiskearter.html">Fiskearter</a>
-                <a class="hovedkategori" href="bli_medlem.html">Bli medlem</a>
-                <a class="hovedkategori" href="blogg.html">Blogg</a>
-           
-            </div>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Felles html</title>
+    <link rel="stylesheet" href="css/felles_styling.css">
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="img/example-logo.png">
+      <div id="navbar">
+        <a class="hovedkategori" href="om_klubben.html">Om klubben</a>
+        <a class="hovedkategori" href="utlaan_utstyr.html">Utlån av utstyr</a>
+        <a class="hovedkategori" href="klubbstatistikk.html">Klubbstatistikk</a>
+        <a class="hovedkategori" href="fiskearter.html">Fiskearter</a>
+        <a class="hovedkategori" href="bli_medlem.html">Bli medlem</a>
+        <a class="hovedkategori" href="blogg.html">Blogg</a>
+      </div>
+    </header>
+    <main>
+        
+      <style>
+        .statflex {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .tavle_flex {
 
-        </header>
-        <h1>Klubbstatistikk</h1>
-    </body>
+        }
+        .flex-item {
+            width: 1fr;
+            margin: 30px;
+            height: 1fr;
+            border: 3px solid black;
+            background-color: rgb(36, 75, 109);
+        }
+        #tavleoverskrift{
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+            background-color: black;
+        }
+        .ledertavle {
+            width: 450px;
+            height: 1fr;
+        }
+        #ledertavle_innhold{
+            font-size: 24px;
+        }
+        table, th, td {
+            border: 2px solid rgb(194, 194, 194);
+            border-collapse: collapse;
+        }
+        th {
+            color: #ffffff;
+            background-color: #3f3f3f;
+        }
+        td {
+            color:rgb(255, 255, 255)
+        }
+        #eksempel-bilde { width: 350px; }
+      </style>
+
+      <div class="statflex">
+        <div class="flex-item ledertavle">
+        <div id="tavleoverskrift">Ledertavle</div>
+           <table id="ledertavle_innhold" style="width:100%">
+                <tr style="background-color:aquamarine">
+                    <th>Nr.</th>
+                    <th>Navn</th>
+                    <th>Fisk</th>
+                    <th>Kg</th>
+                </tr>
+                <tr style="background-color: #252525;">
+                    <th>1</th>
+                    <td>Maltsar Nordjordsmann</th>
+                    <td>Flyndre</th>
+                    <td>16.5</th>
+                </tr>
+                <tr style="background-color:rgb(156, 156, 156)">
+                    <th>2</th>
+                    <td>Mari Kandel</th>
+                    <td>Torsk</th>
+                    <td>13.3</th>
+                </tr>
+                <tr style="background-color: #252525;">
+                    <th>3</th>
+                    <td>Falk Fisker</th>
+                    <td>Laks</th>
+                    <td>11.3</th>
+                </tr>
+                <tr style="background-color:rgb(156, 156, 156)">
+                    <th>4</th>
+                    <td>Johnny Jager</th>
+                    <td>Sild</th>
+                    <td>10.8</th>
+                </tr>
+                <tr style="background-color: #252525;">
+                    <th>5</th>
+                    <td>Ammar Agner</th>
+                    <td>Torsk</th>
+                    <td>10.4</th>
+                </tr>
+                <tr style="background-color:rgb(156, 156, 156)">
+                    <th>6</th>
+                    <td>Karl Mordsmann</th>
+                    <td>Flyndre</th>
+                    <td>10.2</th>
+                </tr>
+                <tr style="background-color: #252525;">
+                    <th>7</th>
+                    <td>Ammar Agner</th>
+                    <td>Torsk</th>
+                    <td>9.8</th>
+                </tr>
+                <tr style="background-color:rgb(156, 156, 156)">
+                    <th>8</th>
+                    <td>Karl Mordsmann</th>
+                    <td>Flyndre</th>
+                    <td>9.6</th>
+                </tr>
+                <tr style="background-color: #252525;">
+                    <th>9</th>
+                    <td>Ammar Agner</th>
+                    <td>Torsk</th>
+                    <td>9.3</th>
+                </tr>
+                <tr style="background-color:rgb(156, 156, 156)">
+                    <th>10</th>
+                    <td>Karl Mordsmann</th>
+                    <td>Flyndre</th>
+                    <td>9.0</th>
+                </tr>
+                <tr style="background-color: #252525;">
+                    <th>11</th>
+                    <td>Ammar Agner</th>
+                    <td>Torsk</th>
+                    <td>8.9</th>
+                </tr>
+                <tr style="background-color:rgb(156, 156, 156)">
+                    <th>12</th>
+                    <td>Karl Mordsmann</th>
+                    <td>Flyndre</th>
+                    <td>8.7</th>
+                </tr>
+           </table>
+        </div>
+        <div class="flex-item brukerinput" style="margin-left:300px;">
+            <img src="img/sendinnplaceholder.png" style="height: 300px; width 250px;">
+            
+        </div>
+        <div class="flex-item fiskbilde">
+            <img src="img/fiskstat.jpg" style="height: 400px; width: 300px; opacity: 0.8;">
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      Bodø fiskeklubb <br>
+      bodø@fiskeklubb.no 
+    </footer>
+  </body>
 </html>
