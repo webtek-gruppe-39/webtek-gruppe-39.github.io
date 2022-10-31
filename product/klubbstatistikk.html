@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <img id="logo" src="img/example-logo.png">
+      <img id="logo" src="img/lysing_logo_lys.png">
       <div id="navbar">
         <a class="hovedkategori" href="om_klubben.html">Om klubben</a>
         <a class="hovedkategori" href="utlaan_utstyr.html">Utlån av utstyr</a>
@@ -19,7 +19,7 @@
       </div>
     </header>
     <main>
-        
+
       <style>
         .statflex {
             display: flex;
@@ -32,15 +32,16 @@
         .flex-item {
             width: 1fr;
             margin: 30px;
+            margin-left: 200px;
             height: 1fr;
             border: 3px solid black;
-            background-color: rgb(36, 75, 109);
+            background-color: rgb(5, 50, 101);
         }
         #tavleoverskrift{
             font-size: 30px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            color: white;
-            background-color: black;
+            color: rgb(255, 255, 255);
+            background-color: rgb(5, 50, 101);
         }
         .ledertavle {
             width: 450px;
@@ -60,7 +61,32 @@
         td {
             color:rgb(255, 255, 255)
         }
-        #eksempel-bilde { width: 350px; }
+        label{
+                font-size: 26px;
+                font-family: Arial, Helvetica, sans-serif;
+                color:#ffffff;
+            }
+        form{
+                text-align: left;
+                margin: 8px;
+        }
+        input[type=text]{
+                width:200px; 
+                padding: 4px 8px; 
+                font-size: 15px;
+                border-width: 2px;
+            }
+            select{
+                width: 120px;
+                padding: 4px;
+                font-size: 15px;
+            }
+            input[type=number]{
+                width:80px; 
+                padding: 4px 4px; 
+                font-size: 20px;
+                border-width: 4px;
+            }
       </style>
 
       <div class="statflex">
@@ -147,12 +173,29 @@
                 </tr>
            </table>
         </div>
-        <div class="flex-item brukerinput" style="margin-left:300px;">
-            <img src="img/sendinnplaceholder.png" style="height: 300px; width 250px;">
+        <div class="flex-item brukerinput" style="border-radius: 8px;">
+            <form onsubmit="alert('Rekord sendt inn!'); return false">
+                <label for="navn"> Navn:</label> <br>
+                <input type="text" id="navn" name="navn" 
+                 pattern="[A-Za-z\s]{1,}" title="Kun bokstaver" required><br><br>
+                 <label for="fisk">Fisk:</label> <br>
+                 <select id="fisk" name="fisk" style="width: 150px;" required>
+                    <option value="torsk">Torsk</option>
+                    <option value="laks">Laks</option>
+                    <option value="sei">Sei</option>
+                    <option value="hyse">Hyse</option>
+                    <option value="sild">Sild</option>
+                    <option value="makrell">Makrell</option>
+                 </select><br><br>
+                 <label for="vekt">Vekt (kg):</label> <br>
+                 <input type="number" id="vekt" name="vekt" step="0.1" min="0.1" max="90" required><br><br>
+                <input type="submit" value="Send inn" style="font-size: 20px; border-color: #ffffff; border-width: 3px; alig"><br><br>
+            
+             </form>
             
         </div>
         <div class="flex-item fiskbilde">
-            <img src="img/fiskstat.jpg" style="height: 400px; width: 300px; opacity: 0.8;">
+            
         </div>
       </div>
 
