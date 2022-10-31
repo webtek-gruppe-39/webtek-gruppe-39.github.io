@@ -69,13 +69,17 @@ h1{
   }
   #logoindex{
     width: 50%;
-    height: 50%;
+    height: auto;
     position:fixed;
     left: 25%;
-    top: 15%;
+    right: 25%;
+    top: 25%;
+    bottom:25%;
+    padding-bottom: 80%;
     transition: transform .7s ease-in-out;
   }
-  img:hover{
+  #logoindex:hover{
     transform: rotate(360deg);
   }
+
  
