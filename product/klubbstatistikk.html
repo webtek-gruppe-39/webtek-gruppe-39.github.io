@@ -7,17 +7,7 @@
     <link rel="stylesheet" href="css/felles_styling.css">
   </head>
   <body>
-    <header>
-      <img id="logo" src="img/lysing_logo_lys.png">
-      <div id="navbar">
-        <a class="hovedkategori" href="om_klubben.html">Om klubben</a>
-        <a class="hovedkategori" href="utlaan_utstyr.html">Utlån av utstyr</a>
-        <a class="hovedkategori" href="klubbstatistikk.html">Klubbstatistikk</a>
-        <a class="hovedkategori" href="fiskearter.html">Fiskearter</a>
-        <a class="hovedkategori" href="bli_medlem.html">Bli medlem</a>
-        <a class="hovedkategori" href="blogg.html">Blogg</a>
-      </div>
-    </header>
+   
     <main>
 
       <style>
@@ -26,9 +16,11 @@
             align-items: flex-start;
             flex-wrap: wrap;
         }
+        /*
         .tavle_flex {
 
         }
+        */
         .flex-item {
             width: 1fr;
             margin: 30px;
@@ -189,7 +181,7 @@
                  </select><br><br>
                  <label for="vekt">Vekt (kg):</label> <br>
                  <input type="number" id="vekt" name="vekt" step="0.1" min="0.1" max="90" required><br><br>
-                <input type="submit" value="Send inn" style="font-size: 20px; border-color: #ffffff; border-width: 3px; alig"><br><br>
+                <input type="submit" value="Send inn" style="font-size: 20px; border-color: #ffffff; border-width: 3px;"><br><br>
             
              </form>
             
@@ -200,9 +192,8 @@
       </div>
 
     </main>
-    <footer>
-      Bodø fiskeklubb <br>
-      bodø@fiskeklubb.no 
-    </footer>
+
+    <script src="js/add_header_footer.js"></script>
+    
   </body>
 </html>
