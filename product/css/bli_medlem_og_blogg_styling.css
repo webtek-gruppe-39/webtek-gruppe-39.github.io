@@ -1,9 +1,6 @@
 /* bli_medlem og blogg */
 
-main {
-  text-align: left; /* undo global */
-  margin-bottom: 100px;
-} 
+main { text-align: left; /* undo global */ } 
 
 .title {
   margin: 3rem;
@@ -20,6 +17,7 @@ main {
   align-items: flex-start;
   align-content: space-between;
 }
+
 .item {
   padding: 1.15rem;
   background-color: white;
@@ -33,8 +31,8 @@ is present. */
   .item { width: 100%; } 
 }
 
-h2 { padding-bottom: 0.3rem; }
-h3 { padding-bottom: 0.3rem; }
+h2, h3 { padding-bottom: 0.3rem; }
+
 p {
   white-space: pre-wrap;
   text-align: justify;
@@ -42,28 +40,7 @@ p {
   margin: 0.5rem 0 0.5rem 0;
 }
 
-.metadata {
-  font-family: monospace;
-  font-size: 0.75rem;
-  padding: 0.5rem 0 0.5rem 0;
-  text-align: left;
-}
-
-
-#blogs {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-#insta { height: 440px;}
-#insta > iframe { height: inherit; }
-@media screen and (min-width: 832px) {
-  #insta {
-    position: sticky;
-    --headerHeight: 100px;
-    top: var(--headerHeight);
-  }
-}
+#signupForm { line-height: 2.5rem; }
 
 input, textarea, button {
   appearance: none; -webkit-appearance: none;
@@ -74,24 +51,73 @@ input, textarea, button {
   resize: none;
   font-style: italic;
 }
+
 input::placeholder, textarea::placeholder { color: black; }
 
-#signupForm { line-height: 2.5rem; }
-.hook > p { text-align: left; }
 #birthdateLabel { padding-right: 1ch; }
+
 #motivation {
   width: 100%;
   height: 10rem;
 }
+
 #submit {
   background-color: black;
   color: white;
   padding: 0.2rem 0.5rem 0.2rem 0.5rem;
   font-style: normal;
 }
+
 #submit:hover { cursor:grab; }
+
 #submit:active {
   cursor: grabbing;
   background-color: white;
   color: black;
+}
+
+.hook > p { text-align: left; }
+
+
+
+
+#instaHeader { margin-bottom: 1rem; }
+
+#instaHyperlink { padding-left: 1ch; }
+
+#gallery { 
+  display: flex;
+  flex-wrap: wrap;  
+  gap: 2px;
+}
+
+.galleryImg {
+  width: 32.969%;
+  order: 2;
+}
+
+.enlarge {
+  width: 100%;
+  order: 1;
+}
+
+.metadata {
+  font-family: monospace;
+  font-size: 0.75rem;
+  padding: 0.5rem 0 0.5rem 0;
+  text-align: left;
+}
+
+#blogs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 832px) {
+  #insta {
+    position: sticky;
+    --headerHeight: 100px;
+    top: var(--headerHeight);
+  }
 }

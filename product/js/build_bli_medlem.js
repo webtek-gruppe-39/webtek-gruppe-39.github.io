@@ -1,21 +1,25 @@
-import { H, Z, lorem } from './mini-lib.js'
+import { H, Z, lorem } from './mini_lib.js'
 
 // recycled
 let p, h3
 
 console.log('Bli medlem!')
 
+// main section
+let main = H.tag('main')
+document.body.append(main)
+
 // tittel
 let h1 = H.tag('h1')
 h1.classList.add('title')
 h1.textContent = 'Bli medlem!'
-Z.qs('main').append(h1)
+main.append(h1)
 
 // flex container
 let c = H.div()
 c.id = 'flexContainer'
 c.classList.add('container')
-Z.qs('main').append(c)
+main.append(c)
 
 // section 1: om medlemsskap
 let bait = H.div()
@@ -73,4 +77,6 @@ Z.qs('#flexContainer').append(hook)
 name.focus({preventScroll: true})
 
 // log
-submit.addEventListener('click', () => { alert('Bli-medlem-skjemaet er sendt på kødd!')})
+submit.addEventListener('click', () => {
+  alert('Bli-medlem-skjemaet er sendt på kødd!')
+})

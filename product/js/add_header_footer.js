@@ -14,3 +14,5 @@ const footer = template.querySelector('footer')
 // spytt inn
 document.body.prepend(header)
 document.body.append(footer)
+
+console.log('Added header and footer from template.')
