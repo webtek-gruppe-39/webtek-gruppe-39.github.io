@@ -8,28 +8,11 @@
   </head>
   <body>
     <header>
-      <a href="forside.html"><img id="logo" src="img/fish.png"></a>
+      <div id="logo">
+        <a href="forside.html" ><img src="img/lysing_logo_lys.png" height="100px"></a>
+      </div>
       
-      <!-- <div id="navbar">
-        <div class="hovedkategori">
-          <a href="om_klubben.html">Om klubben</a>
-        </div>
-        <div class="hovedkategori">
-          <a href="utlaan_utstyr.html">Utlån av utstyr</a>
-        </div>
-        <div class="hovedkategori">
-          <a href="klubbstatistikk.html">Klubbstatistikk</a>
-        </div>
-        <div class="hovedkategori">
-          <a href="fiskearter.html">Fiskearter</a>
-        </div>
-        <div class="hovedkategori">
-          <a href="bli_medlem.html">Bli medlem</a>
-        </div>
-        <div class="hovedkategori">
-          <a href="blogg.html">Blogg</a>
-        </div>
-      </div> -->
+
       
       <div id="navbar">
             
@@ -44,15 +27,11 @@
     </header>
     <main>
       
-      <!-- EKSEMPEL -->
+     
       <style>
-        main {
-            margin-left: 10%;
-        }
-
+        
         section {
-            text-align: left;
-            width: 700px;
+            text-align: center;
             
         }
 
@@ -70,25 +49,29 @@
         padding-bottom: 5%;
        }
 
-        .textbox {
-            text-align: left;
-        }
-
-        iframe {
-            position: fixed;
-        }
+       .textbox {
+          width: 35%;
+          text-align: left;
+          margin: auto;
+          padding: 20px;
+          background-color: white;
+          
+      }
+      
+      #fiskekart {
+        display: none;
+        width: 100%;
+      }
+    
 
       </style>
 
     <h1> Fiskearter </h1>  
-      <!-- Finn bedre bilder av fiskene uten copyright senere-->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49287.50752556395!2d14.412518779743111!3d67.29159997480966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45df10f55b63f17d%3A0x8e785b93b25d3c53!2zQm9kw7g!5e0!3m2!1sno!2sno!4v1666614519709!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
     
     <section>
         <h2> Torsk </h2>
         <div class="imgandtext"> 
-            <img class="fisk_bilde" src="img/cod.eksempel.png"></img>
+            <img class="fisk_bilde" src="img/torsk.png"></img>
             <div class="textbox">
                 
                 <p>
@@ -96,8 +79,13 @@
                         <li> <strong>Kjennetegn:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</li>
                         <li> <strong>Gjennomsnittlig størrelse:</strong> Kg: x , Lengde: y </li>
                         <li> <strong>Anbefalt utstyr:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</li>
-                        <li> <strong>Hvor å finne i Bodø:</strong> Markert på kartet med: *vilgåelig farge* </li>
-                    </ul>
+                        <li> <strong>Hvor å finne i Bodø:</strong> 
+                          <button onclick="display_map()">Se på kart </button> 
+                          <button onclick="hide_map()">Skjul kart </button>
+                        </li>
+                    
+                      </ul>
+                      <img id="fiskekart" src="img/fiskekart_bodø.png"></img>    
                 </p>
             </div>
         </div>
@@ -107,7 +95,7 @@
     <section>
         <h2> Sei </h2>
         <div class="imgandtext"> 
-            <img class="fisk_bilde" src="img/cod.eksempel.png"></img>
+            <img class="fisk_bilde" src="img/sei.png"></img>
             <div class="textbox">
                 
                 <p>
@@ -126,7 +114,7 @@
     <section>
         <h2> Markell </h2>
         <div class="imgandtext"> 
-            <img class="fisk_bilde" src="img/cod.eksempel.png"></img>
+            <img class="fisk_bilde" src="img/makrell.png"></img>
             <div class="textbox">
                 
                 <p>
@@ -145,7 +133,7 @@
     <section>
         <h2> Ørret </h2>
         <div class="imgandtext"> 
-            <img class="fisk_bilde" src="img/cod.eksempel.png"></img>
+            <img class="fisk_bilde" src="img/ørret.png"></img>
             <div class="textbox">
                 
                 <p>
@@ -164,7 +152,7 @@
     <section>
         <h2> Kveite </h2>
         <div class="imgandtext"> 
-            <img class="fisk_bilde" src="img/cod.eksempel.png"></img>
+            <img class="fisk_bilde" src="img/kveite.png"></img>
             <div class="textbox">
                 
                 <p>
@@ -186,5 +174,6 @@
       Bodø fiskeklubb <br>
       bodø@fiskeklubb.no 
     </footer>
+    <script src="js/fiskekart.js"></script>
   </body>
 </html>
