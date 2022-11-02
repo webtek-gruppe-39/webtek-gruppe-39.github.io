@@ -8,7 +8,7 @@ html {
   --lightBlue: rgb(211, 252, 255);
   --darkBlue: rgb(5, 50, 101);
   --headerHeight: 100px;
-  font-size: 16px;  
+  font-size: 16px;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  position: fixed; top: 0; 
+  position: fixed; top: 0;
   width: 100%;
   height: var(--headerHeight);
 
@@ -36,6 +36,10 @@ header {
 #logo {
   object-fit: contain;
   height: 100%;
+  margin-left: 2%;
+}
+#logo a{
+  text-decoration: none;
 }
 
 #navbar {
@@ -80,17 +84,47 @@ a.hovedkategori:active{
   text-decoration: none;
 }
 
+
+/* Styling av footer */
 footer {
-  margin-top: auto;
   background-color: var(--darkBlue);
   width: 100%;
   font-size: 1em;
   font-weight: bold;
   color: white;
+  margin: 80px 0 0 0;
+
 
   /* border: 2px solid rgb(142, 142, 235); */
-  padding: 0.3rem;
+  padding: 0.1rem 0.1rem 2rem 0.1rem;
+
 }
+footer #insta_logo{
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+footer .footer_section {
+  max-width: 16%;
+  min-width: 200px;
+  float:left;
+  margin: 0px 5%;
+  padding-top: 1em;
+}
+.footer_section h3{
+  font-size: 1.2em;
+  padding-bottom: 0.8em;
+  color: aliceblue;
+  
+}
+.footer_section p{
+  font-size: 0.8em;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: lighter;
+  
+}
+
+
 
 main {
   margin-top: var(--headerHeight);
@@ -99,3 +133,5 @@ main {
 }
 
 header, footer { z-index: 1; }
+
+
