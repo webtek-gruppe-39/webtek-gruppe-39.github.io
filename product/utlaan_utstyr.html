@@ -23,21 +23,38 @@
     </style>
     
     <main>
-        <h1>Utlån av utstyr</h1>
-        <p>Her kan du se allt utstyr som er tilgjengelig for utlån. Klikk på bildene hvis du vil få mer informasjon om utstyret</p>
-
+        <div id="startinfo">
+            <h1>Utlån av utstyr</h1>
+            <p>Her kan du se allt utstyr som er tilgjengelig for utlån. Klikk på bildene hvis du vil få mer informasjon om utstyret</p>
+        </div>
+        
         <div id=utstyr>
             <div class="utstyr">
                 <h3>Fiskestang</h3>
-                <img src="img/ustyr_fiskestang.jpg">
+                <img src="img/ustyr_fiskestang.jpg" id="fiskestang">
+                <div id="fiskestang_info">
+                  <p>Merke: Bodø fishing equipment</p>
+                  <p>Modell: Salmon catcher 3000</p>
+                  <p>Vekt: 765g</p>
+                </div>
             </div>
             <div class="utstyr">
                     <h3>Fiskesluk</h3>
-                    <img src="img/ustyr_fiskesluk.jpg">
+                    <img src="img/ustyr_fiskesluk.jpg" id="fiskesluk">
+                    <div id="fiskesluk_info">
+                      <p>Merke: Trondheim Fiskeutstyr</p>
+                      <p>Modell: Laksfangaren 22</p>
+                      <p>Vekt: 32g</p>
+                    </div>                  
             </div>
             <div class="utstyr">
                     <h3>Fiskehov</h3>
-                    <img src="img/utstyr_fiskehov.jpg">
+                    <img src="img/utstyr_fiskehov.jpg" id="fiskehov">
+                    <div id="fiskehov_info">
+                      <p>Merke: Trondheim Fiskeutstyr</p>
+                      <p>Modell: The Nidaros Net</p>
+                      <p>Vekt: 432g</p>
+                    </div>   
             </div>
         </div>
 
@@ -45,8 +62,22 @@
             <h3>Kontakt</h3>
             <p>For utlån eller spørsmål om utstyret kontakte utstyrsansvarlig på ustyr@fiskeklubb.no</p>
         </div>
+        <style>
+          #startinfo {
+            margin-bottom: 25px;
+          }
+
+          #fiskestang_info, #fiskesluk_info, #fiskehov_info {
+            visibility: hidden;
+            margin-bottom: 10px;
+          }
+
+          #utstyrkontakt {
+            margin-top: 25px;
+          }
+        </style>
     </main>
-   
+    <script type="text/javascript" src="js/utstyr.js"></script>
     <script defer src="js/add_header_footer.js"></script>
 
   </body>
