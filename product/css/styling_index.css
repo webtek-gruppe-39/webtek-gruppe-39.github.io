@@ -1,3 +1,8 @@
+html, body{
+  width:99%;
+  height:99%;  
+}
+
 h1{
     font-size: 3em;
     width: 30%;
@@ -8,6 +13,7 @@ h1{
     left: 35%;
     right: 35%;
   }
+
 #navbar {
     padding: 1rem;
   
@@ -17,7 +23,6 @@ h1{
     flex-wrap: wrap;
     gap: 0.4rem 0rem;
   }
-
 
   a.hovedkategori {
     padding: 0.2rem 1rem 0.2rem 1rem;
@@ -36,7 +41,6 @@ h1{
     color: black;
     text-decoration: none;
   }
-
 
 #nav{
     background-color: transparent;
@@ -68,6 +72,8 @@ h1{
   
     z-index: -999;
   }
+
+/*   
   #logoindex{
     width: 50%;
     height: auto;
@@ -83,4 +89,4 @@ h1{
     transform: rotate(360deg);
   }
 
- 
+  */
