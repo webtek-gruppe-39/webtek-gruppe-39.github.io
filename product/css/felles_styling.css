@@ -151,6 +151,8 @@ section {
   text-align: center;
 }
 
+h1, h2, h3 { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
 h1 {
   margin: 3rem;
   text-align: center;
