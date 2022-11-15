@@ -32,7 +32,7 @@ main.append(container)
   insta.append(h2)
   // link
   a = H.tag('a'); a.id = 'instaHyperlink'
-  a.href = 'https://www.instagram.com/bodofiskeklubb2/'
+  a.href = 'https://www.instagram.com/bodofiskeklubb'
   a.textContent = '@bodofiskeklubb'
   h2.append(a)
 
@@ -57,7 +57,7 @@ main.append(container)
   // blog generator
   const newBlogPost = (title, metadata, content) => {
     let bp, t, m, c
-    bp = H.div(); bp.classList.add('item', 'blogpost')
+    bp = H.div(); bp.classList.add('item', 'blogpost', 'justify')
     t = H.tag('h2')
     m = H.tag('p'); m.classList.add('metadata')
     c = H.tag('p')

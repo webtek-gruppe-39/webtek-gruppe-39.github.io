@@ -1,5 +1,7 @@
 /* bli_medlem og blogg */
 
+/* h2, h3 { padding-bottom: 0.3rem; } */
+
 main { text-align: left; /* undo global */ } 
 
 .title {
@@ -29,15 +31,6 @@ is present. */
 .item { width: 50ch; /* 50–80ch */ }
 @media screen and (max-width: 50ch) { 
   .item { width: 100%; } 
-}
-
-h2, h3 { padding-bottom: 0.3rem; }
-
-p {
-  white-space: pre-wrap;
-  text-align: justify;
-  line-height: 1.15rem;
-  margin: 0.5rem 0 0.5rem 0;
 }
 
 #signupForm { line-height: 2.5rem; }
@@ -121,3 +114,7 @@ input::placeholder, textarea::placeholder { color: black; }
     top: var(--headerHeight);
   }
 }
+
+.justify { text-align: justify; }
+
+.preserveWhitespace { white-space: pre-wrap; }

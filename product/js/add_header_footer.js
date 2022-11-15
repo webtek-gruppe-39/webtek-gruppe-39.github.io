@@ -1,6 +1,6 @@
-// spytter inn header og footer fra et dokument som fungerer som templat
+// legger inn header og footer fra et dokument som fungerer som templat
 
-// skaff siden som et dokument
+// skaff siden som et dokument fra header_footer.html
 const xmlhttp = new XMLHttpRequest()
 xmlhttp.open("GET", 'header_footer.html', false)
 xmlhttp.send()
@@ -11,7 +11,7 @@ template.innerHTML = xmlhttp.responseText
 const header = template.querySelector('header')
 const footer = template.querySelector('footer')
 
-// spytt inn
+// Legger til i temaside
 document.body.prepend(header)
 document.body.append(footer)
 

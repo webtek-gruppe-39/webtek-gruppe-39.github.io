@@ -23,7 +23,7 @@ main.append(c)
 
 // section 1: om medlemsskap
 let bait = H.div()
-bait.classList.add('item', 'bait')
+bait.classList.add('item', 'bait', 'justify')
 h3 = H.tag('h3')
 p = H.tag('p')
 h3.textContent = '🎣 Om medlemskap'
