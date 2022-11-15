@@ -126,7 +126,6 @@ footer .footer_section {
 main {
   margin-top: var(--headerHeight);
   margin-bottom: 100px;
-  text-align: center;
 }
 footer .tekst_logo {
   -webkit-filter: invert(1);
