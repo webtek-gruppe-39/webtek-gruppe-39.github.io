@@ -16,10 +16,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
   width: 100vw;
   overflow-x: hidden;
-
   background-color: var(--lightBlue);
 }
 
@@ -37,10 +35,8 @@ header, footer { z-index: 1; }
 header {
   position: fixed; top: 0;
   width: 100%;
-
   display: flex;
   justify-content: space-between;
-
   background-color: var(--darkBlue);
 }
 
@@ -98,6 +94,7 @@ a.hovedkategori:active{
 
 
 /* FOOTER */
+
 footer {
   background-color: var(--darkBlue);
   width: 100%;
@@ -105,10 +102,9 @@ footer {
   font-weight: bold;
   color: white;
   margin: 80px 0 0 0;
-
   padding: 0.1rem 0.1rem 2rem 0.1rem;
-
 }
+
 footer #insta_logo{
   padding-left: 30%;
   padding-right: 30%;
@@ -121,12 +117,14 @@ footer .footer_section {
   margin: 0px 5%;
   padding-top: 1em;
 }
+
 .footer_section h3{
   font-size: 1.2em;
   padding-bottom: 0.8em;
   color: aliceblue;
   
 }
+
 .footer_section p{
   font-size: 0.8em;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -154,22 +152,22 @@ section {
 }
 
 h1 {
-  margin: 1rem;
+  margin: 3rem;
   text-align: center;
 }
 
 h2 {
-  margin: 2rem 0 1rem 0;
+  margin: 4rem 0 0 0;
 }
 
 p {
-  /* white-space: pre-wrap; */
-  line-height: 1.15rem;
   margin: 0.5rem 0 0.5rem 0;
+  line-height: 1.25rem;
 }
 
 .textbox {
-  width: 35%;
+  box-sizing: content-box; width: 50ch;
+
   text-align: left;
   margin: auto;
   padding: 20px;

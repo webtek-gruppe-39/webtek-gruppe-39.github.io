@@ -1,14 +1,5 @@
 /* bli_medlem og blogg */
 
-/* h2, h3 { padding-bottom: 0.3rem; } */
-
-main { text-align: left; /* undo global */ } 
-
-.title {
-  margin: 3rem;
-  text-align: center;
-}
-
 .container {
   margin-top: 2rem; 
   margin-bottom: 2rem;
@@ -28,7 +19,7 @@ main { text-align: left; /* undo global */ }
 /* Keep left margin from centering 
 when less than a full line of text 
 is present. */
-.item { width: 50ch; /* 50–80ch */ }
+.item { box-sizing: content-box; width: 50ch; /* 50–80ch */ }
 @media screen and (max-width: 50ch) { 
   .item { width: 100%; } 
 }
@@ -71,11 +62,7 @@ input::placeholder, textarea::placeholder { color: black; }
 
 .hook > p { text-align: left; }
 
-
-
-
-#instaHeader { margin-bottom: 1rem; }
-
+#instaHeader { margin: 0 0 1rem 0; }
 #instaHyperlink { padding-left: 1ch; }
 
 #gallery { 
@@ -107,7 +94,7 @@ input::placeholder, textarea::placeholder { color: black; }
   gap: 2rem;
 }
 
-@media screen and (min-width: 832px) {
+@media screen and (min-width: 1088px) {
   #insta {
     position: sticky;
     --headerHeight: 100px;
@@ -116,5 +103,4 @@ input::placeholder, textarea::placeholder { color: black; }
 }
 
 .justify { text-align: justify; }
-
 .preserveWhitespace { white-space: pre-wrap; }

@@ -44,7 +44,7 @@ main.append(container)
   for (let i=0; i<9; i++) {
     const img = H.tag('img');
     img.classList.add('galleryImg')
-    img.src = `img/gallery/${i+1}.jpg`
+    img.src = `img/bildegalleri/${i+1}.jpg`
     gallery.append(img)
   }
 
@@ -57,10 +57,10 @@ main.append(container)
   // blog generator
   const newBlogPost = (title, metadata, content) => {
     let bp, t, m, c
-    bp = H.div(); bp.classList.add('item', 'blogpost', 'justify')
-    t = H.tag('h2')
+    bp = H.div(); bp.classList.add('item', 'blogpost', 'preserveWhitespace')
+    t = H.tag('h3')
     m = H.tag('p'); m.classList.add('metadata')
-    c = H.tag('p')
+    c = H.tag('p'); c.classList.add('justify')
     t.textContent = title
     m.textContent = metadata + '\n---------------------------------------'
     c.textContent = content
