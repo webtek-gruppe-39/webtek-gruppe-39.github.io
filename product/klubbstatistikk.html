@@ -16,20 +16,16 @@
             align-items: flex-start;
             flex-wrap: wrap;
         }
-        /*
-        .tavle_flex {
 
-        }
-        */
         .flex-item {
             width: 1fr;
             margin: 30px;
-            margin-left: 200px;
+            margin-left: 5px;
             height: 1fr;
             border: 3px solid black;
             background-color: rgb(5, 50, 101);
         }
-        #tavleoverskrift{
+        .overskrift {
             font-size: 30px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             color: rgb(255, 255, 255);
@@ -38,6 +34,7 @@
         .ledertavle {
             width: 450px;
             height: 1fr;
+            margin-left: 5px;
         }
         #ledertavle_innhold{
             font-size: 24px;
@@ -62,6 +59,13 @@
                 text-align: left;
                 margin: 8px;
         }
+        .fiskbilde{
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(255, 255, 255);
+            width: 300px;
+            margin-left: auto;
+        }
         input[type=text]{
                 width:200px; 
                 padding: 4px 8px; 
@@ -83,7 +87,7 @@
 
       <div class="statflex">
         <div class="flex-item ledertavle">
-        <div id="tavleoverskrift">Ledertavle</div>
+        <div class="overskrift">Oktobers ledere</div>
            <table id="ledertavle_innhold" style="width:100%">
                 <tr style="background-color:aquamarine">
                     <th>Nr.</th>
@@ -129,44 +133,128 @@
                 </tr>
                 <tr style="background-color: #252525;">
                     <th>7</th>
-                    <td>Ammar Agner</th>
+                    <td>Mari Måke</th>
                     <td>Torsk</th>
                     <td>9.8</th>
                 </tr>
                 <tr style="background-color:rgb(156, 156, 156)">
                     <th>8</th>
-                    <td>Karl Mordsmann</th>
+                    <td>Petter Sprell</th>
                     <td>Flyndre</th>
                     <td>9.6</th>
                 </tr>
                 <tr style="background-color: #252525;">
                     <th>9</th>
-                    <td>Ammar Agner</th>
+                    <td>Lars Larsen</th>
                     <td>Torsk</th>
                     <td>9.3</th>
                 </tr>
                 <tr style="background-color:rgb(156, 156, 156)">
                     <th>10</th>
-                    <td>Karl Mordsmann</th>
+                    <td>Otto Ålmann</th>
                     <td>Flyndre</th>
                     <td>9.0</th>
                 </tr>
                 <tr style="background-color: #252525;">
                     <th>11</th>
-                    <td>Ammar Agner</th>
+                    <td>Mario Pesce</th>
                     <td>Torsk</th>
                     <td>8.9</th>
                 </tr>
                 <tr style="background-color:rgb(156, 156, 156)">
                     <th>12</th>
-                    <td>Karl Mordsmann</th>
-                    <td>Flyndre</th>
-                    <td>8.7</th>
+                    <td>Tor Berre</th>
+                    <td>Sild</th>
+                    <td>0.2</th>
                 </tr>
            </table>
         </div>
+        <div class="flex-item ledertavle">
+            <div class="overskrift">Gjennom tidene</div>
+               <table id="ledertavle_innhold" style="width:100%">
+                    <tr style="background-color:aquamarine">
+                        <th>Nr.</th>
+                        <th>Navn</th>
+                        <th>Fisk</th>
+                        <th>Kg</th>
+                    </tr>
+                    <tr style="background-color: #252525;">
+                        <th>1</th>
+                        <td>Maltsar Nordjordsmann</th>
+                        <td>Flyndre</th>
+                        <td>16.5</th>
+                    </tr>
+                    <tr style="background-color:rgb(156, 156, 156)">
+                        <th>2</th>
+                        <td>Mari Kandel</th>
+                        <td>Torsk</th>
+                        <td>13.3</th>
+                    </tr>
+                    <tr style="background-color: #252525;">
+                        <th>3</th>
+                        <td>Falk Fisker</th>
+                        <td>Laks</th>
+                        <td>11.3</th>
+                    </tr>
+                    <tr style="background-color:rgb(156, 156, 156)">
+                        <th>4</th>
+                        <td>Johnny Jager</th>
+                        <td>Sild</th>
+                        <td>10.8</th>
+                    </tr>
+                    <tr style="background-color: #252525;">
+                        <th>5</th>
+                        <td>Ammar Agner</th>
+                        <td>Torsk</th>
+                        <td>10.4</th>
+                    </tr>
+                    <tr style="background-color:rgb(156, 156, 156)">
+                        <th>6</th>
+                        <td>Karl Mordsmann</th>
+                        <td>Flyndre</th>
+                        <td>10.2</th>
+                    </tr>
+                    <tr style="background-color: #252525;">
+                        <th>7</th>
+                        <td>Mari Måke</th>
+                        <td>Torsk</th>
+                        <td>9.8</th>
+                    </tr>
+                    <tr style="background-color:rgb(156, 156, 156)">
+                        <th>8</th>
+                        <td>Petter Sprell</th>
+                        <td>Flyndre</th>
+                        <td>9.6</th>
+                    </tr>
+                    <tr style="background-color: #252525;">
+                        <th>9</th>
+                        <td>Lars Larsen</th>
+                        <td>Torsk</th>
+                        <td>9.3</th>
+                    </tr>
+                    <tr style="background-color:rgb(156, 156, 156)">
+                        <th>10</th>
+                        <td>Otto Ålmann</th>
+                        <td>Flyndre</th>
+                        <td>9.0</th>
+                    </tr>
+                    <tr style="background-color: #252525;">
+                        <th>11</th>
+                        <td>Mario Pesce</th>
+                        <td>Torsk</th>
+                        <td>8.9</th>
+                    </tr>
+                    <tr style="background-color:rgb(156, 156, 156)">
+                        <th>12</th>
+                        <td>Tor Berre</th>
+                        <td>Sild</th>
+                        <td>0.2</th>
+                    </tr>
+               </table>
+            </div>
         <div class="flex-item brukerinput" style="border-radius: 8px;">
-            <form onsubmit="alert('Rekord sendt inn!'); return false">
+            <div class="overskrift">Send inn rekord</div>
+            <form onsubmit="alert('Din rekord er blitt sendt inn til godkjenning!'); return false">
                 <label for="navn"> Navn:</label> <br>
                 <input type="text" id="navn" name="navn" 
                  pattern="[A-Za-z\s]{1,}" title="Kun bokstaver" required><br><br>
@@ -178,6 +266,7 @@
                     <option value="hyse">Hyse</option>
                     <option value="sild">Sild</option>
                     <option value="makrell">Makrell</option>
+                    <option value="flyndre">Flyndre</option>
                  </select><br><br>
                  <label for="vekt">Vekt (kg):</label> <br>
                  <input type="number" id="vekt" name="vekt" step="0.1" min="0.1" max="90" required><br><br>
@@ -187,7 +276,9 @@
             
         </div>
         <div class="flex-item fiskbilde">
-            
+            <div class="overskrift">IKKE JUKS!</div>
+            <img src="img/fengsel.jpg" style="width:294px;">
+            <p> Vi har nulltoleranse for juks og falske innsendinger. Tull kan lede til alvorlige konsekvenser!</p>
         </div>
       </div>
 
