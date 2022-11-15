@@ -23,6 +23,17 @@ body {
   background-color: var(--lightBlue);
 }
 
+
+
+
+/* HEADER & FOOTER */
+header, footer { z-index: 1; }
+
+
+
+
+/* HEADER */
+
 header {
   position: fixed; top: 0;
   width: 100%;
@@ -120,20 +131,50 @@ footer .footer_section {
   font-size: 0.8em;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: lighter;
-  
 }
 
-main {
-  margin-top: var(--headerHeight);
-  margin-bottom: 100px;
-}
 footer .tekst_logo {
   -webkit-filter: invert(1);
   filter:invert(1);
   max-width: 10%;
 }
 
-header, footer { z-index: 1; }
+
+
+
+/* FELLES FOR ALLE TEMASIDER */
+
+main {
+  margin-top: var(--headerHeight);
+  margin-bottom: 100px;
+}
+
+section {
+  text-align: center;
+}
+
+h1 {
+  margin: 1rem;
+  text-align: center;
+}
+
+h2 {
+  margin: 2rem 0 1rem 0;
+}
+
+p {
+  /* white-space: pre-wrap; */
+  line-height: 1.15rem;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.textbox {
+  width: 35%;
+  text-align: left;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+}
 
 
 
@@ -144,7 +185,6 @@ header, footer { z-index: 1; }
   text-align: center;
   margin-left: 20%;
   margin-right: 20%;
-  
 }
 
 .om_styret {
@@ -185,44 +225,6 @@ header, footer { z-index: 1; }
 
 
 
-
-section {
-  text-align: center;
-}
-
-h1 {
-  /* font-size: 45px; */
-  padding-bottom: 5%;
-}
-
-h2 {
-  /* font-size: 35px; */
-}
-
-h3 {
-
-}
-
-h4 {
-
-}
-
-p {
-  /* white-space: pre-wrap; */
-  line-height: 1.15rem;
-  margin: 0.5rem 0 0.5rem 0;
-}
-
-
-
-.textbox {
-  width: 35%;
-  text-align: left;
-  margin: auto;
-  padding: 20px;
-  background-color: white;
-
-}
 
 /* FISKEARTER */
 

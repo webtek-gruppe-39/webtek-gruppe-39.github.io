@@ -3,6 +3,14 @@ width:99%;
 height:99%;  
 }
 
+
+
+
+#logoindex {position:relative; top:0%; left:0%; width:30%; height:auto;}
+
+
+
+
 #tekst_logo{
   /* font-size: 3em; */
   width: 30%;

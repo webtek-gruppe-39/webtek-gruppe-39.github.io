@@ -1,4 +1,4 @@
-import { H, Z, lorem, lorem2, lorem3 } from './mini_lib.js'
+import { H, Z, lorem, lorem2, lorem3 } from '../modules/mini-lib.js'
 
 // recycled
 let h1, h2, a
