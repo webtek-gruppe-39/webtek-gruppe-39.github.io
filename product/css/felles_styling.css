@@ -98,6 +98,7 @@ a.hovedkategori:active{
 footer {
   background-color: var(--darkBlue);
   width: 100%;
+  min-width: 100%;
   font-size: 1em;
   font-weight: bold;
   color: white;
@@ -112,17 +113,18 @@ footer #insta_logo{
 
 footer .footer_section {
   max-width: 16%;
-  min-width: 200px;
-  float:left;
-  margin: 0px 5%;
+  min-width: 150px;
+  float: left;
+  margin: 0px 4%;
   padding-top: 1em;
+  display: inline-block;
 }
 
 .footer_section h3{
   font-size: 1.2em;
   padding-bottom: 0.8em;
   color: aliceblue;
-  
+
 }
 
 .footer_section p{
@@ -134,7 +136,8 @@ footer .footer_section {
 footer .tekst_logo {
   -webkit-filter: invert(1);
   filter:invert(1);
-  max-width: 10%;
+  max-width: 80%;
+
 }
 
 
@@ -179,7 +182,7 @@ p {
 
 
 
-/* OM KLUBBEN */
+/* OM KLUBBEN og UTLÅN UTSTYR*/
 
 #side_beskrivelse, #historie {
   text-align: center;
@@ -187,12 +190,12 @@ p {
   margin-right: 20%;
 }
 
-.om_styret {
+#om_styret {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
   width: 60%;
-  min-width: 800px;
+  min-width: 1000px;
   margin-top: auto;
 }
 
@@ -200,7 +203,6 @@ p {
   width: 250px;
   text-align: center;
   display: inline-block;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1em;
 }
 
