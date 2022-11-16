@@ -190,7 +190,7 @@ p {
   margin-right: 20%;
 }
 
-#om_styret {
+.bilder_med_tekst {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -221,8 +221,9 @@ p {
 
 .utstyr {
   display: inline-block;
-  margin-right: 80px;
-  margin-left: 80px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 50px;
 }
 
 
