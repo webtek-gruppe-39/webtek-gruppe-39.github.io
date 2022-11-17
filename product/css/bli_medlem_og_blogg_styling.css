@@ -1,11 +1,19 @@
-/* bli_medlem og blogg */
+/* styling av bli_medlem.html og blogg.html */
 
-main { text-align: left; /* undo global */ } 
 
-.title {
-  margin: 3rem;
-  text-align: center;
-}
+
+
+/* inline added by JS */
+
+.textAlignCenter { text-align: center; }
+.justify { text-align: justify; }
+.preserveWhitespace { white-space: pre-wrap; }
+
+
+
+
+/* white text boxes built around
+a flex container with items */
 
 .container {
   margin-top: 2rem; 
@@ -19,28 +27,15 @@ main { text-align: left; /* undo global */ }
 }
 
 .item {
+  box-sizing: content-box; width: 50ch; /* 50–80ch */ 
   padding: 1.15rem;
   background-color: white;
 }
 
-/* Keep left margin from centering 
-when less than a full line of text 
-is present. */
-.item { width: 50ch; /* 50–80ch */ }
-@media screen and (max-width: 50ch) { 
-  .item { width: 100%; } 
-}
 
-h2, h3 { padding-bottom: 0.3rem; }
 
-p {
-  white-space: pre-wrap;
-  text-align: justify;
-  line-height: 1.15rem;
-  margin: 0.5rem 0 0.5rem 0;
-}
 
-#signupForm { line-height: 2.5rem; }
+/* form */
 
 input, textarea, button {
   appearance: none; -webkit-appearance: none;
@@ -53,6 +48,8 @@ input, textarea, button {
 }
 
 input::placeholder, textarea::placeholder { color: black; }
+
+#signupForm { line-height: 2.5rem; }
 
 #birthdateLabel { padding-right: 1ch; }
 
@@ -76,12 +73,21 @@ input::placeholder, textarea::placeholder { color: black; }
   color: black;
 }
 
-.hook > p { text-align: left; }
+
+
+
+/* 'blogg' page width fix */
+
+@media screen and (max-width: 527px) {
+  #insta, .blogpost { box-sizing: border-box; width: 100%; }
+}
 
 
 
 
-#instaHeader { margin-bottom: 1rem; }
+/* (fake) instagram image gallery */
+
+#instaHeader { margin: 0 0 1rem 0; }
 
 #instaHyperlink { padding-left: 1ch; }
 
@@ -91,22 +97,34 @@ input::placeholder, textarea::placeholder { color: black; }
   gap: 2px;
 }
 
+/* ideally use grid */
 .galleryImg {
-  width: 32.969%;
+  width: 32%;
   order: 2;
 }
+
+.galleryImg:hover { cursor: grab; }
+
+.galleryImg:active { cursor: grabbing; }
 
 .enlarge {
   width: 100%;
   order: 1;
 }
 
-.metadata {
-  font-family: monospace;
-  font-size: 0.75rem;
-  padding: 0.5rem 0 0.5rem 0;
-  text-align: left;
+/* let galley stick to menu bar when in two column view */
+@media screen and (min-width: 1088px) {
+  #insta {
+    position: sticky;
+    --headerHeight: 100px;
+    top: var(--headerHeight);
+  }
 }
+
+
+
+
+/* blog posts */
 
 #blogs {
   display: flex;
@@ -114,10 +132,9 @@ input::placeholder, textarea::placeholder { color: black; }
   gap: 2rem;
 }
 
-@media screen and (min-width: 832px) {
-  #insta {
-    position: sticky;
-    --headerHeight: 100px;
-    top: var(--headerHeight);
-  }
+.metadata {
+  font-family: monospace;
+  font-size: 0.9rem;
+  padding: 0.5rem 0 0.5rem 0;
+  text-align: left;
 }

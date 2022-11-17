@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="nb">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/felles_styling.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico">
+    <link rel="stylesheet" href="css/felles_styling.css">
+    <script defer src="js/page-builders/add_header_footer.js"></script>
+
     <title>Utlån av utstyr</title>
-  </head>
-  <body>
+    <script defer src="js/interactivity/utstyr.js"></script>
 
     <style>
-      .utstyr {
-        display: inline-block;
-        margin-right: 80px;
-        margin-left: 80px;
+      #startinfo {
+        margin-bottom: 25px;
       }
 
-      .utstyr > img {
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
+      #fiskestang_info, #fiskesluk_info, #fiskehov_info {
+        visibility: hidden;
+        margin-bottom: 10px;
+      }
+
+      #utstyrkontakt {
+        margin-top: 25px;
       }
     </style>
-    
+  </head>
+  <body>    
     <main>
-        <div id="startinfo">
-            <h1>Utlån av utstyr</h1>
-            <p>Her kan du se allt utstyr som er tilgjengelig for utlån. Klikk på bildene hvis du vil få mer informasjon om utstyret</p>
-        </div>
+        <h1>Utlån av utstyr</h1>
+        <div class="textbox">
+            <h3>Info utlån</h3>
+            
+            <p>I fiskeklubben har vi en del utstyr som kan lånes for alle medlemmer. Her kan du se alt utstyr som er tilgjengelig for utlån. Klikk på bildene hvis du vil få mer informasjon om utstyret</p>
         
-        <div id=utstyr>
+        </div>
+        <div class=bilder_med_tekst>
             <div class="utstyr">
                 <h3>Fiskestang</h3>
-                <img src="img/ustyr_fiskestang.jpg" id="fiskestang">
+                <img src="img/utstyr/fiskestang.jpg" id="fiskestang" class="rundtbilde" alt="Bilde på fiskestang">
                 <div id="fiskestang_info">
                   <p>Merke: Bodø fishing equipment</p>
                   <p>Modell: Salmon catcher 3000</p>
@@ -40,7 +46,7 @@
             </div>
             <div class="utstyr">
                     <h3>Fiskesluk</h3>
-                    <img src="img/ustyr_fiskesluk.jpg" id="fiskesluk">
+                    <img src="img/utstyr/fiskesluk.jpg" id="fiskesluk" class="rundtbilde" alt="Bilde på fiskesluk">
                     <div id="fiskesluk_info">
                       <p>Merke: Trondheim Fiskeutstyr</p>
                       <p>Modell: Laksfangaren 22</p>
@@ -49,7 +55,7 @@
             </div>
             <div class="utstyr">
                     <h3>Fiskehov</h3>
-                    <img src="img/utstyr_fiskehov.jpg" id="fiskehov">
+                    <img src="img/utstyr/fiskehov.jpg" id="fiskehov" class="rundtbilde" alt="Bilde på fiskehov">
                     <div id="fiskehov_info">
                       <p>Merke: Trondheim Fiskeutstyr</p>
                       <p>Modell: The Nidaros Net</p>
@@ -57,28 +63,10 @@
                     </div>   
             </div>
         </div>
-
-        <div id="utstyrkontakt">
+        <div class="textbox">
             <h3>Kontakt</h3>
             <p>For utlån eller spørsmål om utstyret kontakte utstyrsansvarlig på ustyr@fiskeklubb.no</p>
         </div>
-        <style>
-          #startinfo {
-            margin-bottom: 25px;
-          }
-
-          #fiskestang_info, #fiskesluk_info, #fiskehov_info {
-            visibility: hidden;
-            margin-bottom: 10px;
-          }
-
-          #utstyrkontakt {
-            margin-top: 25px;
-          }
-        </style>
     </main>
-    <script type="text/javascript" src="js/utstyr.js"></script>
-    <script defer src="js/add_header_footer.js"></script>
-
   </body>
 </html>

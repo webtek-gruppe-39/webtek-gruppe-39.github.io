@@ -1,147 +1,173 @@
 <!DOCTYPE html>
 <html lang="nb">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/p2-style.css">
-        <title>P3 changes</title>
-    </head>
-    <body>
-        <header>
-            <h1>P3 changes</h1>
-        </header> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/p1234-style.css">
+    <title>P3 • Endringer</title>
+  </head>
+  <body>
 
-        <section>
-            <h2>1. Header</h2>
-            <p>P3: Endringer</p>
-            <p>Gruppe 39: Bjørn Aslak Dallmann, Oskar Edvardsson, Martin Tryggestad Larsen, Håkon Wiland, Ingvild Engen Økland</p>
-        </section>
-        <section>
-            <h2>2. Administrative detaljer</h2>
-            <p>Fiktiv klient: Bodø Fiskeklubb</p>
-            <p>Kontakt: bodø@fiskeklubb.no</p>
-        </section>
-        <section>
-            <h2>Endringer</h2>
-            <p>Endingerererererer</p>
+    <header>
+      <h1>P3 • Endringer</h1>
+    </header> 
+    <section>
+      <p>Dato: 2022-09-28</p>
+      <p>Gruppe 39: Bjørn Aslak Dallmann, Oskar Edvardsson, Martin Tryggestad Larsen, Håkon Wiland, Ingvild Engen Økland</p>
+    
+    </section>
 
-        </section>
-       
-        <section>
-            <h2>Endringer i side-layout og utseende</h2>
-            <p>Det ble gjort noen endringer i designet,.</p>
-            <p>Endringer</p>
-            <ol>
-                <li> 
-                </li>
-                <li>
+    <section>
+      <h2>2. Administrative detaljer</h2>
+      <p>Fiktiv klient: Bodø Fiskeklubb</p>
+      <p>Kontakt: bodø@fiskeklubb.no</p>
+      <p>Link til nettsiden</p>
+    </section>
+    
+    <section>
+      <h2>3. Avvik fra opprinnelig design</h2>
 
-                </li>
-                <li>
+      <h3>Navigasjonsstruktur</h3>
+      <p>Opprinnelig navigasjonsstrukturen ble beholdt, med ett unntak: Når navigasonsbaren over temasidene er for liten til å romme hyperlenkene (mindre enn 500 CSS-piksler bred), vil kun logo (hyperlenke til forsiden) vises. Dette er som regel tilfelle ved besøk fra mobil.</p>
 
-                </li>
-                <li>Navigasjonsbar, footer og tema-sidene og har max-width på 960px (standard bredde). Hvis vinduet er større, sørger auto-margin for midtstilling ift. vindusbredden. Hvis vinduet er mindre, stables navigasjonsbarens overskrifter over hverandre. Evt. erstattes disse men én drop-down meny for mobilbruk.
-                </li>
-                <li>Bakgrunnsfarge: rgb(211, 252, 255) – lys blå farge for å passe til fiske – og sjø tema 
-                </li>
-                <li>Artiklene/paragrafene pr temaside er listet under hverandre. Hver har en egen ramme rundt seg med avstand til andre, der innenfor en bakgrunnsfarge i nyanse av hvit (for å kunne gjøre det lettere å lese for brukerne).
-                </li>
-                <li>
-                </li>
-                <li>
+      <h3>Layout og utseende </h3>
+      <ul>
+        <li>Layout har ingen fastsatt maks bredde. Istedet er det etterstrebet et responsivt design, som benytter CSS Flexbox for tilpasning av header, innhold (main section) og footer i nettleservinduet.</li>
+        <li>Kun tekst har hvit ramme rundt seg for å forbedre lesbarhet. Bilder ligger rett på sidens bakgrunn.</li>
+      </ul>
 
-                </li>
-            </ol> 
-        </section>
-        <section>
-            <h2>Endringer i innhold</h2>
-            <p>Innholdet er fordelt (hovedsakelig) på seks temasider:</p>
-            <ol>
-                <li>Hjemmeside
-                    <p>Hjemmesiden vil være den første siden en bruker som besøker nettsiden vil se. 
-                     Det viktigste formålet til hjemmesiden vil derfor være at brukeren får en oversikt over innholdet på nettstedet,
-                     og at de intuitivt kan navigere de ulike sidene og finne fram dit de vil. Hjemmesiden vil bestå av en stor logo for fiskeklubben, 
-                     og Javascript vil brukes slik at  logoen reagerer  når musepekeren ligger over den. Nederst på siden vil det være en meny-bar med linker 
-                     til de andre sidene på nettstedet. Siden vil ha et enkelt design, slik at brukeren ikke blir konfrontert med for mye informasjon for tidlig.
-                    </p>
-                    <img src="assets/mockup_hjemmeside.png" alt="Mockup for hjemmesiden">
-                </li>
-                <li>Om klubben
-                    <p>Denne siden har som formål å gi brukeren informasjon om klubben. 
-                        Dette inkluderer informasjon om klubben, dens historie og styrets medlemmer. 
-                        Informasjonen om styrets medlemmer vil inneholde deres navn, rolle og kontaktinformasjon.
-                    
-                    </p>
-                    <img src="assets/mockup_omklubben.png" alt="Mockup for om klubben">
-                </li>
-                <li>Utlån av utstyr
-                    <p>Denne siden har som formål å gi alle medlemmer sjanse å prøve på fiske uansett om man har eget utstyr eller ikke. 
-                        Klubben ønsker at dette skal senke terskelen for å starte fiske og dermed øke interesse for fiske i Bodø. 
-                        Siden vil inkludere informasjon om hvilke utstyr som kan lånes, bilde på utstyret og hvem man må kontakte for å låne utstyret.
-                    </p>
-                    <img src="assets/mockup_utstyr.png" alt="Mockup for utstyr">
-                </li>
-                <li>Klubbstatistikk
-                    <p>For fiskere med konkurranseinstinkt har nettsiden en ledertavle hvor brukere kan sende inn sine største fangst. 
-                        Brukeren sender inn hvilken type fisk de fanget og hvor mye den veide og får melding om at resultatene må godkjennes. 
-                        På høyre side siden er det to tabeller, en for månedens ledere og en for rekorder gjennom tidene. 
-                        Over tabellene kan man velge hvilke typer fisk man ønsker å se tabeller over. 
-                        Til venstre for disse tabellene er det tre felt hvor man kan fylle inn navn, type fisk og vekt for å sende inn egne rekorder. 
-                        Når brukeren har sendt inn en rekord dukker det opp en melding øverst på nettleseren som leser “Din rekord er blitt sendt inn til godkjenning!”.</p>
-                    <img src="assets/mockup_klubbstatistik.png" alt="Mockup for Klubbstatistikk">
-                </li>
-                <li>Fiskearter
-                    <p>Denne siden har som formål å gi brukeren nødvendig informasjon om ulike fiskearter som finnes i Bodø område og hvor de kan fanges. 
-                        Siden skal være informativ og lett å bruke, på den måten blir det enklere for nyere fiskere å komme seg ut på tur uten å måtte legge inn alt for mye innsats rundt det tekniske
-                    </p>
-                    <p>Siden inkluderer følgende informasjon over de ulike fiskeartene: illustrasjon, kjennetegn ved arten, gjennomsnittlig størrelse, anbefalt agn, (mer?). 
-                        Størrelse og format av illustrasjonen vil være utformet slik at siden laster inn raskt. 
-                    </p>
-                    <p>I tillegg vil siden inneholde et kart nederst som viser markeringer med farge for hvor de ulike artene kan fanges. 
-                        For områder der det kreves fiskekort vil dette også bli markert. Kart med denne interaktiviteten vil bli implementert ved hjelp av Javascript. 
-                    </p>
-                    <img src="assets/mockup_fiskearter.png" alt="Mockup for fiskearter">
-                </li>
-                <li>Bli medlem
-                    <p>Klubben ønsker nye medlemmer, derfor skal det være enkelt å bli medlem. 
-                        En side kalt "Bli medlem!" skal både gi informasjon om medlemskap, og gi besøkende et skjema hvor de lettvint kan fylle ut sin personalia, motivasjon ol. og bli kontaktet av klubbstyret for opptak til klubben. 
-                        Tilbakemelding på innsendt skjema skal dukke opp ved hjelp av Javascript.
-                    </p>
-                    <img src="assets/mockup_blimedlem.png" alt="Mockup for Bli medlem">
-                </li>
-                <li>Blogg
-                    <p>For å skape engasjement i klubben skal siden ha en side hvor klubbstyret og medlemmer kan ytre seg. 
-                        Denne er todelt: Blogg- og bilde-feed side ved side. Blogg-feeden inneholder nyhetssaker publisert av styret og innsendte blogginnlegg fra medlemmer, sortert etter dato. 
-                        Bilde-feeden er et bildegalleri som henter de nyeste bildene fra klubbens Instagram-hashtag, typisk publisert av medlemmene fra sine private Instagramkontoer.
-                    </p>
-                    <img src="assets/mockup_blogg.png" alt="Mockup for blogg">
-                </li>
-            </ol>
-        </section>
-        <section>
-            <h2>Endringer i minstekrav for JavaScript</h2>
-            <p>Fire ulike Javascript-applikasjoner for å gjøre siden mer interaktiv og spennende.</p>
-            <ol>
-                <li>Sprellende logo:</li>
-                På forsiden av siden vil logoen være i sentrum av siden, for å gjøre siden hakket mer munter og interaktiv vil vi inkludere en funksjon som gjør at logoen beveger på seg. Logoen vil bestå av en fisker/fisk slik at når en holder musepekeren over vil fiske bevege lett på seg. Dette er et tiltak som gjør at siden mulig kan appellere mer til den yngre andelen av målgruppen.
-                
-                <li>Innmeldingsskjema:</li>
-                Skjemaet for å melde seg inn i klubben vil fungere slik at etter brukeren har lagt inn informasjonen som trengs for å bli medlem, vil brukeren motta en tilbakemelding hvor det blir bekreftet at skjemaet er mottatt. 
-                
-                <li>Leie av fiskeutstyr:</li>
-                På siden med oversikt over fiskeutstyr vil det være en funksjon som viser tilgjengelig antall av diverse utstyr til enhver tid. i tillegg vil en kunne sende inn forespørsel for å leie utstyr og en vil få en bekreftelse på at forespørselen er mottatt. 
-                
-                <li>Fiskearter:</li>
-                Siden for fiskearter skal kunne vise bilde av diverse fiskearter i Bodø området. Ved klikk på en valgt fiskeart vil det bli markert på et kart fiskeplasser/områder hvor fiskearten kan fanges. 
-                
+      <h3>Innhold</h3>
+      <ul>
+        <li>Hjemmeside</li>
+        <p>Designet på forsiden ble endret en del fra den originale planen, men funksjonaliteten er den samme. Siden har som planlagt en navigasjonsbar nederst i vinduet og en logo midt på siden. Det planlagte javascriptet for logoen ble også endret, og logoen flytter seg rundt på siden basert på koordinatene til klientens musepeker, heller en å sprelle når brukeren hover-er over den.</p>
 
+        <li>Om klubben</li>
+        <p>Designet av siden er endret noe fra mockupen, men følger beskrivelsen fra P2. Siden er midtstilt og hver artikkel er i en hvit tekstboks for å gjøre teksten lettere å lese. Ellers er både innholdet og formålet med siden det samme som planlagt.</p>
 
-            </ol>
-        </section>
-        <section>
-            <h2>8. Plan</h2>  
-            <h1>OBS!! endre??</h1>
-            <img src="assets/plan.png" alt="tabell med plan for prosjektet">
-        </section>
+        <li>Utlån av utstyr</li>
+        <p>Innehold på denne siden ble ikke endret så mye sammenlignet med planen. Den eneste store forskjellen var i javascriptet. Planen var i utgangspunktet at javascriptet skulle muliggjøre for brukere å kunne sende inn forespørsel for å leie utstyr. Denne javascript skulle bli ganske lik javascripten for bli medlem å derfor valgte vi å endre til en mer annerledes javascript. I det nye javascriptet så vises informasjon om utstyret når man klikker på bildet av utstyret.</p>
 
-    </body>
+        <li>Klubbstatistikk</li>
+        <p> Planen var at brukere skulle kunne velge forskjellige typer fisk å sortere etter men vi fant ingen tilfredstillende måte å lage dette på, dette er noe som ville blitt prioritert videre om nettsiden hadde en database med større antall innsendinger. Ellers har siden mer innhold enn originalt tenkt, med noen innlegg som informerer om ukens vinner+premie og en advarsel mot å jukse. Begge disse innleggende har bilde inkludert.</p>
+        
+        <li>Fiskearter</li>
+        <p>Planen var i utgangspunkte å ha et fiskekart som alltid var synlig på siden, og endret markeringer når man trykket på ulike fiskearter. Etter litt vurdering valgte vi å laget et individuelt kart for hver av fiskeartene som kan lukke å åpnes ved behov. Grunnlaget for endringer kommer av at siden ble mer oversiktlig og estetisk ved denne løsningen. Den nye løsningen går heller ikke på bekostning av funksjonalietet.</p> 
+      
+        <li>Bli medlem</li> 
+           
+        <li>Blogg</li>
+        
+        <li>Header og footer</li>
+        <p>Header har holdt seg lik planen, men footeren er endret. Footeren har nå informasjon om hvem som designet og bygget nettsiden samt link til fiskeklubbens instagramkonto.</p>
+      
+      </ul>          
+    </section>
+
+    <section>
+      <h2>4. Hvordan teammedlemmene oppfylte minimumskravene sine</h2>
+      <p>Minimikravene var å lage fire forskjellige javascripts.</p>
+      <p>Martin lagde en javascript til klubbstatistikk hvor man kunne sende in nye klubbrekorder, lignende</p>
+      <p>Oskar lagde en javascript til utlån av fiskeutstyr hvor man kunne få informasjon om utstyret hvis man klikker på den</p>
+      <p>Håkon lagde en javascript til fiskearter som viste et fiskekart hvis man klikket på en knapp</p>
+      <p>Bjørn Aslak lagde en javascript til bli medlem hvor man kunne sende inn en søknad om å bli medlem og en script som legger in header og footer på hver side</p>
+      <p>Ingvild lagde en javascript til forsida som fikk logoen til å bevege seg</p>
+    </section>
+
+    <section>
+        <h2>5. Oppdater organiseringsopplegg</h2>
+    </section>
+
+    <section>
+        <h2>6. Endelig arbeidsdeling</h2>  
+        <table>
+          <tr>
+            <th>Filnavn</th>
+            <th>Beskrivelse</th>
+            <th>Ansvar</th>
+          </tr>
+          <tr>
+            <td>forside.html</td>
+            <td>Forsiden</td>  
+            <td>Ingvild</td>
+          </tr>
+          <tr>
+              <td>om_klubben.html</td>
+              <td>Informasjon om klubben og styret</td>
+              <td>Ingvild</td>
+
+          </tr>
+          <tr>
+              <td>utlaan_utstyr.html</td>
+              <td>...beskrivelse...</td>
+              <td>...ansvar...</td>
+          </tr>
+          <tr>
+              <td>fiskearter.html</td>
+              <td>...beskrivelse...</td>
+              <td>...ansvar...</td>
+          </tr>
+          <tr>
+              <td>klubbstatistikk.html</td>
+              <td>...beskrivelse...</td>
+              <td>...ansvar...</td>
+          </tr>
+          <tr>
+              <td>bli_medlem.html</td>
+              <td>...beskrivelse...</td>
+              <td>...ansvar...</td>
+          </tr>
+          <tr>
+              <td>blogg.html</td>
+              <td>...beskrivelse...</td>
+              <td>...ansvar...</td>
+          </tr>
+          <tr>
+              <td>header_footer.html</td>
+              <td>Felles header og footer for delsidene</td>
+              <td>Footer-Ingvild</td>
+          </tr>
+          <tr>
+              <td>felles_styling.css</td>
+              <td>Felles styling for alle sidene</td>
+              <td>Alle</td>
+          </tr>
+          <tr>
+              <td>move_fisk.js</td>
+              <td>Kode for logo på forsiden</td>
+              <td>Ingvild</td>
+              
+          </tr>
+          <tr>
+              <td>build_bli_medlem.js</td>
+              <td>...beskrivelse...</td>
+              <td>...ansvar...</td>
+          </tr>
+          <tr>
+              <td>utstyr.js</td>
+              <td>...beskrivelse...</td>
+              <td>...ansvar...</td>
+          </tr>
+          <tr>
+              <td>fiskekart.js</td>
+              <td>...beskrivelse...</td>
+              <td>...ansvar...</td>
+          </tr>
+          <tr>
+            <td>Sy sammen filer</td>
+            <td>...beskrivelse...</td>
+              <td>...ansvar...</td>
+          </tr>
+          <tr>
+            <td>Siste sjekk</td>
+            <td>Dobbelt og trippeltsjekking for feil, validere kode, legge inn kommentarer</td>
+            <td>Alle</td>
+          </tr>
+        
+        </table>
+        
+        <img src="assets/plan.png" alt="tabell med plan for prosjektet">
+        
+    </section>
+
+  </body>
 </html>
