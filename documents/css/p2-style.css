@@ -26,3 +26,6 @@ img {
 p, li {
     text-align: justify;
 }
+table,  th, th{
+    border: 1px solid black;
+}
