@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1rem;
+  background-color: rgb(165, 216, 237);
+}
+
+header, section {
+  margin: auto;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 80ch;
+  
+  font-family: sans-serif;
+}
+
+section {
+  border: 1px solid;
+  background-color: white;
+}
+
+p, li {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+  white-space: pre-wrap;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.kreds {
+  font-style: italic;
+}
