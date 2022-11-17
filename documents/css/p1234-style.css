@@ -21,11 +21,17 @@ section {
   background-color: white;
 }
 
-p, li {
+li {
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: justify;
   white-space: pre-wrap;
+  font-size: 1.2em;
 }
+p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
 
 img {
   width: 100%;
@@ -34,4 +40,7 @@ img {
 
 .kreds {
   font-style: italic;
+}
+table, th, td{
+  border: 1px solid black;
 }

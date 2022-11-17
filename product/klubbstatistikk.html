@@ -40,6 +40,15 @@
             width: 450px;
             height: 1fr;
             margin-left: 5px;
+            float: left;
+        }
+        @media only screen and (max-width: 970px) {
+            .ledertavle {
+            float: unset;
+         }
+        }
+        .tavler_samlet{
+            width: 1fr;
         }
         #ledertavle_innhold{
             font-size: 24px;
@@ -93,7 +102,8 @@
       <h1>Klubbstatistikk</h1>
 
       <div class="statflex">
-        <div class="flex-item ledertavle">
+        <div class="tavler_samlet flex-item">
+        <div class="ledertavle">
         <div class="overskrift">Oktobers ledere</div>
            <table id="ledertavle_innhold" style="width:100%">
                 <tr style="background-color:aquamarine">
@@ -176,7 +186,7 @@
                 </tr>
            </table>
         </div>
-        <div class="flex-item ledertavle">
+        <div class="ledertavle">
             <div class="overskrift">Gjennom tidene</div>
                <table id="ledertavle_innhold" style="width:100%">
                     <tr style="background-color:aquamarine">
@@ -259,6 +269,7 @@
                     </tr>
                </table>
             </div>
+        </div>
         <div class="flex-item brukerinput" style="border-radius: 8px;">
             <div class="overskrift">Send inn rekord</div>
             <form onsubmit="alert('Din rekord er blitt sendt inn til godkjenning!'); return false">
@@ -283,7 +294,7 @@
             
         </div>
         <div class="flex-item fiskbilde">
-            <div class="overskrift">IKKE JUKS!</div>
+            <div class="overskrift" style="text-align: center;">IKKE JUKS!</div>
             <img src="img/misc/fengsel.jpg" style="width:294px;">
             <p> Vi har nulltoleranse for juks og falske innsendinger. Tull kan lede til alvorlige konsekvenser!</p>
         </div>
