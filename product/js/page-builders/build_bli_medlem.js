@@ -59,6 +59,7 @@ Z.qs('#flexContainer').append(bait)
   birthdateLabel = H.label('birthdate', 'Født')
   birthdateLabel.id = 'birthdateLabel'
   birthdate = H.input('birthdate', 'date')
+  birthdate.value = '2000-01-01'
   motivation = H.tag('textarea')
   motivation.id = 'motivation'
   motivation.placeholder = 'Motivasjon'
