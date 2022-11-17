@@ -8,25 +8,24 @@
     <script defer src="js/page-builders/add_header_footer.js"></script>
 
     <title>Utlån av utstyr</title>
-    <script defer type="text/javascript" src="js/interactivity/utstyr.js"></script>
-
-  </head>
-  <body>
+    <script defer src="js/interactivity/utstyr.js"></script>
 
     <style>
-      /* .utstyr {
-        display: inline-block;
-        margin-right: 80px;
-        margin-left: 80px;
-      } */
+      #startinfo {
+        margin-bottom: 25px;
+      }
 
-      /* .utstyr > img {
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-      } */
+      #fiskestang_info, #fiskesluk_info, #fiskehov_info {
+        visibility: hidden;
+        margin-bottom: 10px;
+      }
+
+      #utstyrkontakt {
+        margin-top: 25px;
+      }
     </style>
-    
+  </head>
+  <body>    
     <main>
         <h1>Utlån av utstyr</h1>
         <div class="textbox">
@@ -38,7 +37,7 @@
         <div class=bilder_med_tekst>
             <div class="utstyr">
                 <h3>Fiskestang</h3>
-                <img src="img/utstyr/fiskestang.jpg" id="fiskestang" class="rundtbilde">
+                <img src="img/utstyr/fiskestang.jpg" id="fiskestang" class="rundtbilde" alt="Bilde på fiskestang">
                 <div id="fiskestang_info">
                   <p>Merke: Bodø fishing equipment</p>
                   <p>Modell: Salmon catcher 3000</p>
@@ -47,7 +46,7 @@
             </div>
             <div class="utstyr">
                     <h3>Fiskesluk</h3>
-                    <img src="img/utstyr/fiskesluk.jpg" id="fiskesluk" class="rundtbilde">
+                    <img src="img/utstyr/fiskesluk.jpg" id="fiskesluk" class="rundtbilde" alt="Bilde på fiskesluk">
                     <div id="fiskesluk_info">
                       <p>Merke: Trondheim Fiskeutstyr</p>
                       <p>Modell: Laksfangaren 22</p>
@@ -56,7 +55,7 @@
             </div>
             <div class="utstyr">
                     <h3>Fiskehov</h3>
-                    <img src="img/utstyr/fiskehov.jpg" id="fiskehov" class="rundtbilde">
+                    <img src="img/utstyr/fiskehov.jpg" id="fiskehov" class="rundtbilde" alt="Bilde på fiskehov">
                     <div id="fiskehov_info">
                       <p>Merke: Trondheim Fiskeutstyr</p>
                       <p>Modell: The Nidaros Net</p>
@@ -64,27 +63,10 @@
                     </div>   
             </div>
         </div>
-      
-
         <div class="textbox">
             <h3>Kontakt</h3>
             <p>For utlån eller spørsmål om utstyret kontakte utstyrsansvarlig på ustyr@fiskeklubb.no</p>
         </div>
-        <style>
-          #startinfo {
-            margin-bottom: 25px;
-          }
-
-          #fiskestang_info, #fiskesluk_info, #fiskehov_info {
-            visibility: hidden;
-            margin-bottom: 10px;
-          }
-
-          #utstyrkontakt {
-            margin-top: 25px;
-          }
-        </style>
     </main>
-
   </body>
 </html>
