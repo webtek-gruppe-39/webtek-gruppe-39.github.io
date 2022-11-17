@@ -1,3 +1,5 @@
+// Script that make text visible when an image is clicked
+
 document.getElementById("fiskestang").addEventListener("click", showInfoFiskestang);
 
 function showInfoFiskestang(id) {
