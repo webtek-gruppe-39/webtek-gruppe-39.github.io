@@ -16,8 +16,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  overflow-x: hidden;
   background-color: var(--lightBlue);
 }
 
@@ -38,6 +36,7 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: var(--darkBlue);
+  padding: 0.2rem;
 }
 
 #logo {
@@ -46,8 +45,10 @@ header {
   margin-left: 2%;
 }
 
-#logo a {
-  text-decoration: none;
+#logo a { text-decoration: none; }
+
+.tekst_logo {
+  filter:invert(1); -webkit-filter: invert(1);
 }
 
 #navbar {
@@ -106,7 +107,9 @@ footer {
   padding: 0.1rem 0.1rem 2rem 0.1rem;
 }
 
-footer #insta_logo{
+footer .tekst_logo { max-width: 80%; } 
+
+footer #insta_logo {
   padding-left: 30%;
   padding-right: 30%;
 }
@@ -114,7 +117,6 @@ footer #insta_logo{
 footer .footer_section {
   max-width: 16%;
   min-width: 150px;
-  float: left;
   margin: 0px 4%;
   padding-top: 1em;
   display: inline-block;
@@ -124,20 +126,12 @@ footer .footer_section {
   font-size: 1.2em;
   padding-bottom: 0.8em;
   color: aliceblue;
-
 }
 
 .footer_section p{
   font-size: 0.8em;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: lighter;
-}
-
-footer .tekst_logo {
-  -webkit-filter: invert(1);
-  filter:invert(1);
-  max-width: 80%;
-
 }
 
 
@@ -171,13 +165,13 @@ p {
 }
 
 .textbox {
-  box-sizing: content-box; width: 50ch;
-
-  text-align: left;
   margin: auto;
-  padding: 20px;
+  box-sizing: content-box; max-width: 50ch;
+  padding: 1rem;
   background-color: white;
+  text-align: justify;
 }
+
 
 
 
@@ -194,8 +188,6 @@ p {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  width: 60%;
-  min-width: 1000px;
   margin-top: auto;
 }
 
@@ -218,18 +210,24 @@ p {
   width: 200px;
   border-radius: 50%;
 }
+.rundtbilde:hover { cursor: grab; }
+.rundtbilde:active { cursor: grabbing; }
 
 .utstyr {
   display: inline-block;
-  margin-right: 20px;
-  margin-left: 20px;
-  padding-top: 50px;
+  margin: 2rem;
 }
 
 
 
 
 /* FISKEARTER */
+
+.textbox li {
+  position: relative;
+  left: 2ch;
+  padding-right: 2ch;
+}
 
 .fiskekart {
   display: none;

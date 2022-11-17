@@ -28,7 +28,7 @@ main.append(container)
 
   // hyperlink to insta profile
   h2 = H.tag('h2'); h2.id = 'instaHeader'
-  h2.textContent = 'Instagram'
+  insta.classList.add('textAlignCenter')
   insta.append(h2)
   // link
   a = H.tag('a'); a.id = 'instaHyperlink'

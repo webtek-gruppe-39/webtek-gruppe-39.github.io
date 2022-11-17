@@ -1,26 +1,22 @@
-html, body{
-width:99%;
-height:99%;  
+html, body {
+  width:99%;
+  height:99%;  
 }
 
+#logoindex { position:relative; top:0%; left:0%; width:30%; height:auto; }
 
-
-
-#logoindex {position:relative; top:0%; left:0%; width:30%; height:auto;}
-
-
-
-
-#tekst_logo{
-  /* font-size: 3em; */
-  width: 20%;
-  /* font-family: Georgia, 'Times New Roman', Times, serif ; */
-  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+#tekst_logo {
   position:fixed;
   top: 45%;
   left: 40%;
+  width: 20%;
+
+  z-index: 2;
+
+  /* font-size: 3em; */
+  /* font-family: Georgia, 'Times New Roman', Times, serif ; */
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
   
-  z-index: -500;
 }
 
 #navbar {
@@ -51,15 +47,16 @@ a.hovedkategori:active{
   text-decoration: none;
 }
 
-#nav{
-  background-color: transparent;
+#nav {
   position: fixed;
-  width: 100%;
-  bottom: 0;
   left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 1rem;
+
+  background-color: transparent;
+
   text-align: center;
-  height: 5rem;
-  padding-top: 2rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -68,7 +65,7 @@ a.hovedkategori:active{
   background-color: transparent;
 }
 
-#bakgrunn{
+#bakgrunn {
   min-height: 100%;
   min-width: 100%;
 
@@ -79,7 +76,7 @@ a.hovedkategori:active{
   top: 0px;
   left: 0px;
 
-  z-index: -999;
+  z-index: 0;
 }
 
 /*   
@@ -97,5 +94,4 @@ a.hovedkategori:active{
 #logoindex:hover{
   transform: rotate(360deg);
 }
-
 */

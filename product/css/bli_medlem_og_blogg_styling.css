@@ -1,4 +1,19 @@
-/* bli_medlem og blogg */
+/* styling av bli_medlem.html og blogg.html */
+
+
+
+
+/* micro */
+
+.textAlignCenter { text-align: center; }
+.justify { text-align: justify; }
+.preserveWhitespace { white-space: pre-wrap; }
+
+
+
+
+/* white text boxes build around
+a flex container with items */
 
 .container {
   margin-top: 2rem; 
@@ -12,19 +27,15 @@
 }
 
 .item {
+  box-sizing: content-box; width: 50ch; /* 50–80ch */ 
   padding: 1.15rem;
   background-color: white;
 }
 
-/* Keep left margin from centering 
-when less than a full line of text 
-is present. */
-.item { box-sizing: content-box; width: 50ch; /* 50–80ch */ }
-@media screen and (max-width: 50ch) { 
-  .item { width: 100%; } 
-}
 
-#signupForm { line-height: 2.5rem; }
+
+
+/* form */
 
 input, textarea, button {
   appearance: none; -webkit-appearance: none;
@@ -37,6 +48,8 @@ input, textarea, button {
 }
 
 input::placeholder, textarea::placeholder { color: black; }
+
+#signupForm { line-height: 2.5rem; }
 
 #birthdateLabel { padding-right: 1ch; }
 
@@ -60,9 +73,22 @@ input::placeholder, textarea::placeholder { color: black; }
   color: black;
 }
 
-.hook > p { text-align: left; }
+
+
+
+/* blogs page width fix */
+
+@media screen and (max-width: 527px) {
+  #insta, .blogpost { box-sizing: border-box; width: 100%; }
+}
+
+
+
+
+/* (fake) instagram image gallery */
 
 #instaHeader { margin: 0 0 1rem 0; }
+
 #instaHyperlink { padding-left: 1ch; }
 
 #gallery { 
@@ -71,29 +97,22 @@ input::placeholder, textarea::placeholder { color: black; }
   gap: 2px;
 }
 
+/* ideally use grid */
 .galleryImg {
-  width: 32.969%;
+  width: 32%;
   order: 2;
 }
+
+.galleryImg:hover { cursor: grab; }
+
+.galleryImg:active { cursor: grabbing; }
 
 .enlarge {
   width: 100%;
   order: 1;
 }
 
-.metadata {
-  font-family: monospace;
-  font-size: 0.75rem;
-  padding: 0.5rem 0 0.5rem 0;
-  text-align: left;
-}
-
-#blogs {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
+/* let galley stick to menu bar when in two column view */
 @media screen and (min-width: 1088px) {
   #insta {
     position: sticky;
@@ -102,5 +121,20 @@ input::placeholder, textarea::placeholder { color: black; }
   }
 }
 
-.justify { text-align: justify; }
-.preserveWhitespace { white-space: pre-wrap; }
+
+
+
+/* blog posts */
+
+#blogs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.metadata {
+  font-family: monospace;
+  font-size: 0.9rem;
+  padding: 0.5rem 0 0.5rem 0;
+  text-align: left;
+}
