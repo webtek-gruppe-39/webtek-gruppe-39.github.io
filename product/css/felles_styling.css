@@ -52,6 +52,9 @@ header {
 .tekst_logo {
   filter:invert(1); -webkit-filter: invert(1);
 }
+header .tekst_logo{
+  height: 75px;
+}
 
 #navbar {
   padding: 0.5rem;
@@ -103,13 +106,19 @@ footer {
   width: 100%;
   font-weight: bold;
   color: white;
+  display: inline;
 }
 
-footer .tekst_logo { max-width: 80%; } 
+footer .tekst_logo { 
+  max-width: 80%; 
+  padding-top: 1em;
+  min-width: 150px;
+} 
 
 footer #insta_logo {
-  padding-left: 30%;
-  padding-right: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
 }
 
 footer .footer_section {
@@ -118,11 +127,13 @@ footer .footer_section {
   margin: 0 4%;
   padding: 1rem;  
   display: inline-block;
+  vertical-align: top;  
 }
 
 .footer_section h3 {
   font-size: 1.2em;
-  padding-bottom: 0.8em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   color: aliceblue;
 }
 
@@ -208,8 +219,8 @@ p {
   width: 200px;
   border-radius: 50%;
 }
-.rundtbilde:hover { cursor: grab; }
-.rundtbilde:active { cursor: grabbing; }
+.utstyr .rundtbilde:hover { cursor: grab; }
+.utstyr .rundtbilde:active { cursor: grabbing; }
 
 .utstyr {
   display: inline-block;
