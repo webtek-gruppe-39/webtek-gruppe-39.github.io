@@ -3,7 +3,7 @@
 
 
 
-/* micro */
+/* inline added by JS */
 
 .textAlignCenter { text-align: center; }
 .justify { text-align: justify; }
@@ -12,7 +12,7 @@
 
 
 
-/* white text boxes build around
+/* white text boxes built around
 a flex container with items */
 
 .container {
@@ -76,7 +76,7 @@ input::placeholder, textarea::placeholder { color: black; }
 
 
 
-/* blogs page width fix */
+/* 'blogg' page width fix */
 
 @media screen and (max-width: 527px) {
   #insta, .blogpost { box-sizing: border-box; width: 100%; }

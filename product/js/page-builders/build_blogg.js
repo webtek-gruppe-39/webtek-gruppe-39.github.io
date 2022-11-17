@@ -1,7 +1,10 @@
-import { H, Z, lorem, lorem2, lorem3 } from '../modules/mini-lib.js'
+import { H, Z, lorem } from '../modules/mini-lib.js'
 
 // recycled
 let h1, h2, a
+
+
+
 
 console.log('Blogg')
 
@@ -9,7 +12,7 @@ console.log('Blogg')
 let main = H.tag('main')
 document.body.append(main)
 
-// tittel
+// title
 h1 = H.tag('h1')
 h1.classList.add('title')
 h1.textContent = 'Blogg'
@@ -20,6 +23,7 @@ const container = H.div()
 container.id = 'flexContainer'
 container.classList.add('container')
 main.append(container)
+
 
 // section: instagram gallery
   const insta = H.div(); insta.id = 'insta'
@@ -61,49 +65,44 @@ main.append(container)
     t = H.tag('h3')
     m = H.tag('p'); m.classList.add('metadata')
     c = H.tag('p'); c.classList.add('justify')
+
     t.textContent = title
     m.textContent = metadata + '\n---------------------------------------'
     c.textContent = content
+
     bp.append(t, m, c)
     return bp
   }
 
+  
   // generate sample blogs
+
   let b1, b2, b3, b4
+
   b1 = newBlogPost(
     'Challenge: Overleve kun på torsk og potet', 
     'Ola Nordmann • 25. oktober', 
-    lorem
+    lorem.original
   )
+
   b2 = newBlogPost(
     'Ka sei torsken?', 
     'Dikt • Torskgeir Fangmansen • 3. oktober', 
-    'Ka torsken sei sa du? Britisk: What does the cod say?\n\nBlub blub blub blub-i-ti-blubb\n\n' + lorem2
+    'Ka torsken sei sa du? Britisk: What does the cod say?\n\nBlub blub blub blub-i-ti-blubb\n\n' + lorem.v2
   )
+
   b3 = newBlogPost(
     'Aktivisme mot ny flyplass - lyingbrygga står i fare', 
     'Politisk motstand • Klubbleder • 9. september', 
-    lorem3
+    lorem.v3
   )
+
   b4 = newBlogPost(
     'Dårlige tider - spar på slukene!',
     'Økoansvarlig • 1. jul',
-    lorem
+    lorem.original
   )
+
   blogs.append(b1, b2, b3, b4)
 
 
-// interactivity
-  // larger image
-  const enlarge = e => {
-    removeEnlarge()
-    e.target.classList.add('enlarge')
-  }
-  const removeEnlarge = () => {
-    try { Z.qs('.enlarge').classList.remove('enlarge') } catch {}
-  }
-
-  window.addEventListener('click', e => {
-    if (e.target.classList.contains('enlarge')) { removeEnlarge() }
-    else if (e.target.classList.contains('galleryImg')) { enlarge(e) }
-  })
