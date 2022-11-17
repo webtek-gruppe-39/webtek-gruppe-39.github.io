@@ -50,6 +50,9 @@ header {
 .tekst_logo {
   filter:invert(1); -webkit-filter: invert(1);
 }
+header .tekst_logo{
+  height: 75px;
+}
 
 #navbar {
   padding: 0.5rem;
@@ -110,10 +113,11 @@ footer .tekst_logo {
   min-width: 150px;
 } 
 
-/* footer #insta_logo {
+footer #insta_logo {
   margin-left: auto;
   margin-right: auto;
-} */
+  height: 60px;
+}
 
 footer .footer_section {
   max-width: 16%;
