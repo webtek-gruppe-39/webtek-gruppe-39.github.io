@@ -11,10 +11,11 @@
     <header>
       <h1>P3 • Endringer</h1>
     </header> 
+
     <section>
-      <p>Dato: 2022-09-28</p>
+      <h2>1. Dokumentdetaljer</h2>
+      <p>Dato: 2022-11-18</p>
       <p>Gruppe 39: Bjørn Aslak Dallmann, Oskar Edvardsson, Martin Tryggestad Larsen, Håkon Wiland, Ingvild Engen Økland</p>
-    
     </section>
 
     <section>
@@ -63,39 +64,38 @@
 
         <li>
           <h4>Fiskearter</h4>
-          <p>Planen var i utgangspunkte å ha et fiskekart som alltid var synlig på siden, og endret markeringer når man trykket på ulike fiskearter. Etter litt vurdering valgte vi å laget et individuelt kart for hver av fiskeartene som kan lukke å åpnes ved behov. Grunnlaget for endringer kommer av at siden ble mer oversiktlig og estetisk ved denne løsningen. Den nye løsningen går heller ikke på bekostning av funksjonalietet.</p> 
+          <p>Planen var i utgangspunkte å lage et fiskekart som alltid var synlig på, og endret markeringer når man trykket på ulike fiskearter ved hjelp Javascript. Etter litt vurdering valgte vi å laget et individuelt kart for hver av fiskeartene som kan lukke ved hjelp av knapper som aktiverer funksjoner i Javascript. Grunnlaget for endringer kommer av at siden ble mer oversiktlig og estetisk ved denne løsningen. Den nye løsningen går heller ikke på bekostning av funksjonalietet.</p> 
         </li>
 
         <li>
           <h4>Bli medlem</h4>
-          <p>Til forskjell fra mochup av siden ble innholdet fordelt på hvite tekstbokser, slik som ellers vedtatt for design. Disse er elementer i egen flexbox container, som sørger for sentrering og distribusjon enten side ved side eller stablet, for et mer responsivt design. Hele siden genereres ved hjelp av Javascript for å gjøre redigering enkel og presis.</p>
+          <p>Til forskjell fra mochup av siden ble innholdet fordelt på hvite tekstbokser, slik som ellers vedtatt for design. Disse er elementer i egen flexbox container, som sørger for sentrering og distribusjon enten side ved side eller stablet, for et mer responsivt design. Hele siden genereres ved hjelp av Javascript for å gjøre redigering enkel og presis. Innmeldingsskjema har ikke egen javascript for å vise tilbakemelding, annet enn en enkel alert. </p>
         </li>
 
         <li>
           <h4>Blogg</h4>
-          <p>Denne siden har tatt utgangspunkt i 'Bli medlem' sin løsning med flexbox for hvite tekstbokser.Til forkjell fra mockup omtalt i P2, stabler blogginnleggene seg i høyden, fordi hver enkelt trenger mer plass for å være leselig. Antallet blogger forventes dessuten å vokse, og en sortering på tid i kun én dimensjon ved stabling er enklere å konseptualisere for lesere. Galleriet er plassert <em>før</em> stabelen med blogginnlegg, i hht. vestlig leseretning, i forsøk på å balansere dominansen mellom bildegalleriet og blogginnleggenen mtp. bilders oppmerksomhetsdominans over tekst. Galleriet er festet til viewport når det og stabelen av blogger vises side om side. Bildegalleriet hentes ikke faktisk fra Instagram, da Instagram sin API er begrenset, og mer avanserte tjenester for dette krever godtgjørelse. Det hersker usikkerhet om bilder fra en hashtag vil sømme seg, da Instagram sin API later til å være begrenset til kun bilder fra en viss tid tilbake. Siden genereres med Javascript i likhet med 'Bli medlem'.</p>
+          <p>Denne siden har tatt utgangspunkt i 'Bli medlem' sin løsning med flexbox for hvite tekstbokser.Til forkjell fra mockup omtalt i P2, stabler blogginnleggene seg i høyden, fordi hver enkelt trenger mer plass for å være leselig. Antallet blogger forventes dessuten å vokse, og en sortering på tid i kun én dimensjon ved stabling er enklere å konseptualisere for lesere. Galleriet er plassert <em>før</em> stabelen med blogginnlegg, i hht. vestlig leseretning, i forsøk på å balansere dominansen mellom bildegalleriet og blogginnleggenen mtp. bilders oppmerksomhetsdominans over tekst. Galleriet er festet til viewport når det og stabelen av blogger vises side om side. Bildegalleriet hentes ikke faktisk fra Instagram, da Instagram sin API er begrenset, og mer avanserte tjenester for dette krever godtgjørelse. Det hersker usikkerhet om bilder fra en hashtag vil sømme seg, da Instagram sin API later til å være begrenset til kun bilder fra en viss tid tilbake. Siden genereres med Javascript i likhet med 'Bli medlem'. Galleriet er interaktivt ved at man kan klikke for å forstørre bilder.</p>
         </li>
 
         <li>
           <h4>Header og footer</h4>
-          <p>Header har holdt seg lik planen, men footeren er endret. Footeren har nå informasjon om hvem som designet og bygget nettsiden samt link til fiskeklubbens instagramkonto.</p>
+          <p>Header har holdt seg lik planen, men footeren er endret. Footeren har nå informasjon om hvem som designet og bygget nettsiden samt link til fiskeklubbens instagramkonto. Skriptet <em>add_header_footer.js</em> henter header og footer herfra og legger det inn i hver av temasidene.</p>
         </li>
-      </ul>          
+      </ul>       
     </section>
 
     <section>
       <h2>4. Hvordan teammedlemmene oppfylte minimumskravene sine</h2>
       <p>Minimikravene var å lage fire forskjellige javascripts.</p>
-      <p>Martin lagde en javascript til klubbstatistikk hvor man kunne sende in nye klubbrekorder, lignende</p>
       <p>Oskar lagde en javascript til utlån av fiskeutstyr hvor man kunne få informasjon om utstyret hvis man klikker på den</p>
       <p>Håkon lagde en javascript til fiskearter som viste et fiskekart hvis man klikket på en knapp</p>
       <p>Bjørn Aslak gjorde bildegalleriet interaktivt (klikk for fullskjerm), skrev scriptet som legger in header og footer i hver temaside (krav om <em>modularitet</em>), samt genererer temasidene 'Bli medlem' og 'Blogg' med Javascript.</p>
-      <p>Ingvild lagde en brukerdefinert javascript til forsida som fikk logoen til å bevege seg</p>
+      <p>Ingvild lagde en brukerdefinert funksjon i javascript til forsida som fikk logoen til å bevege seg basert på plasseringen til musen til brukeren</p>
     </section>
 
     <section class="fileStructure">
         <h2>5. Filstruktur</h2>
-        <p>Endelig filstruktur under mappen 'product':</p>
+        <p>Endelig filstruktur for prosjektet ligger under mappen 'product':</p>
         <ul>
           <li>css/</li>
           <ul>
@@ -129,14 +129,41 @@
               <ul>
                 <li>logo-instagram.png</li>
               </ul>
-              <li>forside</li>
-              <li>icon</li>
-              <li>kart</li>
-              <li>logo</li>
-              <li>misc</li>
-              <li>styremedlem</li>
-              <li>utstyr</li>
-              <li>storfangs.png</li>
+              <li>forside/</li>
+              <ul>
+                <li>bolger.jpg</li>
+                <li>lysinglogofarger.png</li>
+              </ul>
+              <li>icon/</li>
+                <ul>
+                  <li>favicon.ico</li>
+                </ul>
+              <li>kart/</li>
+              <ul>
+                <li>1.png</li>
+                <li>2.png</li>
+                <li>3.png</li>
+              </ul>
+              <li>logo/</li>
+              <ul>
+                <li>tekst_logo-min.png</li>
+              </ul>
+              <li>misc/</li>
+              <ul>
+                <li>fengsel.jpg</li>
+              </ul>
+              <li>styremedlem/</li>
+              <ul>
+                <li>1.png</li>
+                <li>3.png</li>
+                <li>6.png</li>
+              </ul>
+              <li>utstyr/</li>
+              <ul>
+                <li>fiskehov.jpg</li>
+                <li>fiskesluk.jpg</li>
+                <li>fiskestang.png</li>
+              </ul>
             </ul>
           </li>
           <li>js/
@@ -167,26 +194,12 @@
           <li>header_footer.html</li>
           <li>klubbstatistikk.html</li>
           <li>om_klubben.html</li>
-          <li>utlaan_utstyr.hmtl</li>
+          <li>utlaan_utstyr.html</li>
         </ul>
     </section>
 
     <section>
         <h2>6. Endelig arbeidsdeling</h2>
-        <p style="color: red;">Forslag: Liste over gjeldende filsystem ned til siste mappe/fil med fargekoder for ansvarsområde (rød for Ingvild osv.)?</p>
-        <p style="color:blue;">Blir vanskeligere med filene flere jobbet på og vi må i tilfelle skrive beskrivelse et annet sted</p>
-        <p>● How each of the team members fulfilled their minimum requirements. For example:
-          Rachel fulfilled her JavaScript requirements with a user-defined function on intro.html
-          and rollovers on members.html. Tom validated form inputs on orform.html and
-          implemented the pull-down menu for each page
-          <br>● Explicitly state (since it may have changed since the design document), which person
-          worked on which files, including CSS and JavaScript files, and who produced the
-          artwork (banner and button design, etc.).
-          <br>
-          ● Indicate how the modularity requirement was handled and who was responsible for
-          the implementation
-          </p>
-          <p style="color: blueviolet">Vi må legge inn ALLE filer i tabellen og skrive beskrivelser </p>
         <table>
           <tr>
             <th>Filnavn</th>
@@ -215,65 +228,80 @@
           </tr>
           <tr>
               <td>klubbstatistikk.html</td>
-              <td>...beskrivelse...</td>
-              <td>...ansvar...</td>
+              <td>Side med statistikk over største fangst i klubben</td>
+              <td>Martin</td>
           </tr>
           <tr>
               <td>bli_medlem.html</td>
-              <td>...beskrivelse...</td>
-              <td>...ansvar...</td>
+              <td>Side med innmeldingsschema for å bli medlem i klubben</td>
+              <td>Bjørn Aslak</td>
           </tr>
           <tr>
               <td>blogg.html</td>
-              <td>...beskrivelse...</td>
-              <td>...ansvar...</td>
+              <td>Side med bildegalleri og blogginnlegg.</td>
+              <td>Bjørn Aslak</td>
           </tr>
           <tr>
               <td>header_footer.html</td>
               <td>Felles header og footer for delsidene</td>
-              <td>Footer-Ingvild</td>
+              <td>Ingvild</td>
           </tr>
           <tr>
               <td>felles_styling.css</td>
-              <td>Felles styling for alle sidene</td>
+              <td>Felles styling for alle sidene, inkludert spesiell styling for noen av temasidene.</td>
               <td>Alle</td>
+          </tr>
+          <tr>
+            <td>forside_styling.css</td>
+            <td>Styling for forside.</td>
+            <td>Ingvild</td>
+          </tr>
+          <tr>
+            <td>bli_medlem_og_blogg_stylig.css</td>
+            <td>Spesiell styling av </td>
+            <td>Bjørn Aslak</td>
+          </tr>
+          <tr>
+            <td>add_header_footer.js</td>
+            <td>Legger til header og footer fra header_footer.html inn hver temaside.</td>
+            <td>Bjørn Aslak</td>
+          </tr>
+          <tr>
+            <td>build_bli_medlem.js</td>
+            <td>Genererer HTML for bli_medlem.html.</td>
+            <td>Bjørn Aslak</td>
+          </tr>
+          <tr>
+            <td>build_blogg.js</td>
+            <td>Genererer HTML for blogg.html.</td>
+            <td>Bjørn Aslak</td>
+          </tr>
+          <tr>
+            <td>mini-lib.js</td>
+            <td>Lite bibliotek til forenkling av vanlige funksjoner.</td>
+            <td>Bjørn Aslak</td>
+          </tr>
+          <tr>
+            <td>enlarge-image.js</td>
+            <td>Forstørrer bilder i galleri ved klikk.</td>
+            <td>Bjørn Aslak</td>
+          </tr>
+          <tr>
+            <td>fiskekart.js</td>
+            <td>Implementering av knapper som åpner og lukker kart med markeringer for ulike fiskeartert.</td>
+            <td>Håkon</td>
           </tr>
           <tr>
               <td>move_fisk.js</td>
               <td>Kode for logo på forsiden</td>
               <td>Ingvild</td>
-              
-          </tr>
-          <tr>
-              <td>build_bli_medlem.js</td>
-              <td>...beskrivelse...</td>
-              <td>...ansvar...</td>
           </tr>
           <tr>
               <td>utstyr.js</td>
-              <td>...beskrivelse...</td>
-              <td>...ansvar...</td>
+              <td>Script som viser informasjon om hver utstyr</td>
+              <td>Oskar</td>
           </tr>
-          <tr>
-              <td>fiskekart.js</td>
-              <td>Implementering av knapper som åpner og lukker kart med markeringer for ulike fiskeartert.</td>
-              <td>Håkon</td>
-          </tr>
-          <tr>
-            <td>Sy sammen filer</td>
-            <td>...beskrivelse...</td>
-              <td>...ansvar...</td>
-          </tr>
-          <tr>
-            <td>Siste sjekk</td>
-            <td>Dobbelt og trippeltsjekking for feil, validere kode, legge inn kommentarer</td>
-            <td>Alle</td>
-          </tr>
-        
-        </table>
-        
-        <img src="assets/plan.png" alt="tabell med plan for prosjektet">
-        
+        </table>        
     </section>
 
   </body>
