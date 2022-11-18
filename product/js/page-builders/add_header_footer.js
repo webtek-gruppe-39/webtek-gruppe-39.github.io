@@ -1,6 +1,6 @@
 // legger inn header og footer fra templat-dokumentet 'header_footer.html'.
 
-// skaff siden som ren XML,
+// skaff siden som tekst/xml
 const xmlhttp = new XMLHttpRequest()
 xmlhttp.open("GET", 'header_footer.html', false)
 xmlhttp.send()

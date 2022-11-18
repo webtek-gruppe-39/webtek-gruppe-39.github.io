@@ -32,6 +32,9 @@ html, body {
 a.hovedkategori {
   padding: 0.2rem 1rem 0.2rem 1rem;
   font-size: 1.2rem;
+
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: lighter;
 }
 a.hovedkategori:link, 
 a.hovedkategori:visited{
@@ -52,7 +55,9 @@ a.hovedkategori:active{
   left: 0;
   bottom: 0;
   width: 100%;
-  padding-bottom: 1rem;
+
+  box-sizing: border-box;
+  padding: 0 2rem 4rem 2rem;
 
   background-color: transparent;
 

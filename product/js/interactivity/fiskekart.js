@@ -1,5 +1,3 @@
-
-
 // Map for Torsk:
 function display_torsk_map () {
     document.querySelector("#torsk_kart").style.display = "block";

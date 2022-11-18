@@ -25,7 +25,13 @@ body {
 
 
 /* HEADER & FOOTER */
-header, footer { z-index: 1; }
+header, footer {
+  z-index: 1;
+
+  font-size: 0.8em;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: lighter;
+}
 
 
 
@@ -137,11 +143,6 @@ footer .footer_section {
   color: aliceblue;
 }
 
-.footer_section p {
-  font-size: 0.8em;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: lighter;
-}
 
 
 

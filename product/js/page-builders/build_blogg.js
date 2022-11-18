@@ -33,12 +33,8 @@ main.append(container)
   // hyperlink to insta profile
   h2 = H.tag('h2'); h2.id = 'instaHeader'
   insta.classList.add('textAlignCenter')
+  h2.textContent = '#bodofiskeklubb'
   insta.append(h2)
-  // link
-  a = H.tag('a'); a.id = 'instaHyperlink'
-  a.href = 'https://www.instagram.com/bodofiskeklubb'
-  a.textContent = '@bodofiskeklubb'
-  h2.append(a)
 
   // image gallery
   const gallery = H.div(); gallery.id = 'gallery'
@@ -49,6 +45,7 @@ main.append(container)
     const img = H.tag('img');
     img.classList.add('galleryImg')
     img.src = `img/bildegalleri/${i+1}.jpg`
+    img.alt = 'Innlegg fra Instagram merket #bodofiskeklubb'
     gallery.append(img)
   }
 
