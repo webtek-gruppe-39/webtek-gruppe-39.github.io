@@ -20,7 +20,7 @@
             align-items: flex-start;
             flex-wrap: wrap;
             justify-content: center;
-        }
+        } /* Making the page responsive by use of flexbox. */
 
         .flex-item {
             width: 1fr;
@@ -29,7 +29,7 @@
             height: 1fr;
             border: 3px solid black;
             background-color: rgb(5, 50, 101);
-        }
+        } /* Standardizing the look of content on the page.*/
         .overskrift {
             font-size: 30px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -42,11 +42,11 @@
             margin-left: 5px;
             float: left;
         }
-        @media only screen and (max-width: 970px) {
+        @media only screen and (max-width: 970px) { 
             .ledertavle {
-            float: unset;
+            float: unset; 
          }
-        }
+        } /* Certain screen sizes would make the leaderboard look weird, this was the cleanest solution. */
         .tavler_samlet{
             width: 1fr;
         }
@@ -102,9 +102,9 @@
       <h1>Klubbstatistikk</h1>
 
       <div class="statflex">
-        <div class="tavler_samlet flex-item">
+        <div class="tavler_samlet flex-item"> 
         <div class="ledertavle">
-        <div class="overskrift">Oktobers ledere</div>
+        <div class="overskrift">Oktobers ledere</div> <!-- Since there is no database the content is manually added through html. Each row is individually styled with color, could probably have used nth child on the leaderboard class to style every other row instead.-->
            <table id="ledertavle_innhold" style="width:100%">
                 <tr style="background-color:aquamarine">
                     <th>Nr.</th>
@@ -187,7 +187,7 @@
            </table>
         </div>
         <div class="ledertavle">
-            <div class="overskrift">Gjennom tidene</div>
+            <div class="overskrift">Gjennom tidene</div> <!-- An exact copy of the first table, could have probably used a javascript to generate the table to make less repeated code.-->
                <table id="ledertavle_innhold" style="width:100%">
                     <tr style="background-color:aquamarine">
                         <th>Nr.</th>
@@ -272,7 +272,7 @@
         </div>
         <div class="flex-item brukerinput" style="border-radius: 8px;">
             <div class="overskrift">Send inn rekord</div>
-            <form onsubmit="alert('Din rekord er blitt sendt inn til godkjenning!'); return false">
+            <form onsubmit="alert('Din rekord er blitt sendt inn til godkjenning!'); return false">         <!-- The button does not return anything so the website isnt refreshed. Instead it sends an alert to the user. -->
                 <label for="navn"> Navn:</label> <br>
                 <input type="text" id="navn" name="navn" 
                  pattern="[A-Za-z\s]{1,}" title="Kun bokstaver" required><br><br>
@@ -300,7 +300,7 @@
         <div class="flex-item fiskbilde">
             <div class="overskrift" style="text-align: center;">IKKE JUKS!</div>
             <img src="img/misc/fengsel.jpg" style="width:294px;">
-            <p> Vi har nulltoleranse for juks og falske innsendinger. Tull kan lede til alvorlige konsekvenser!</p>
+            <p> Vi har nulltoleranse for juks og falske innsendinger. Tull kan lede til alvorlige konsekvenser!</p> <!-- Both of these are filler content.-->
         </div>
       </div>
 
