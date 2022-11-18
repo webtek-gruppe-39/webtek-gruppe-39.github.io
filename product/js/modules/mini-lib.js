@@ -23,7 +23,7 @@ H.input = (name, type, placeholder) => {
   const i = H.tag('input')
   i.name = name
   i.type = type
-  i.placeholder = placeholder
+  if (type !== 'date') i.placeholder = placeholder
   return i
 }
 

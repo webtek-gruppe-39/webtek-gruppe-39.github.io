@@ -19,10 +19,10 @@
         } /* Making the page responsive by use of flexbox. */
 
         .flex-item {
-            width: 1fr;
+            /*width: 100%;*/
             margin: 30px;
             margin-left: 5px;
-            height: 1fr;
+            /*height: 100%;*/
             border: 3px solid black;
             background-color: rgb(5, 50, 101);
         } /* Standardizing the look of content on the page.*/
@@ -34,7 +34,7 @@
         }
         .ledertavle {
             width: 450px;
-            height: 1fr;
+            /*height: 100%;*/
             margin-left: 5px;
             float: left;
         }
@@ -44,9 +44,9 @@
          }
         } /* Certain screen sizes would make the leaderboard look weird, this was the cleanest solution. */
         .tavler_samlet{
-            width: 1fr;
+            /*width: 100%;*/
         }
-        #ledertavle_innhold{
+        .ledertavle_innhold{
             font-size: 24px;
         }
         table, th, td {
@@ -104,7 +104,7 @@
         <div class="tavler_samlet flex-item"> 
         <div class="ledertavle">
         <div class="overskrift">Oktobers ledere</div> <!-- Since there is no database the content is manually added through html. Each row is individually styled with color, could probably have used nth child on the leaderboard class to style every other row instead.-->
-           <table id="ledertavle_innhold" style="width:100%">
+           <table class="ledertavle_innhold" style="width:100%">
                 <tr style="background-color:aquamarine">
                     <th>Nr.</th>
                     <th>Navn</th>
@@ -187,7 +187,7 @@
         </div>
         <div class="ledertavle">
             <div class="overskrift">Gjennom tidene</div> <!-- An exact copy of the first table, could have probably used a javascript to generate the table to make less repeated code.-->
-               <table id="ledertavle_innhold" style="width:100%">
+               <table class="ledertavle_innhold" style="width:100%">
                     <tr style="background-color:aquamarine">
                         <th>Nr.</th>
                         <th>Navn</th>
@@ -277,6 +277,7 @@
                  pattern="[A-Za-z\s]{1,}" title="Kun bokstaver" required><br><br>
                  <label for="fisk">Fisk:</label> <br>
                  <select id="fisk" name="fisk" style="width: 150px;" required>
+                    <option value="0"></option>
                     <option value="torsk">Torsk</option>
                     <option value="laks">Laks</option>
                     <option value="sei">Sei</option>
@@ -298,13 +299,8 @@
         </div>
         <div class="flex-item fiskbilde">
             <div class="overskrift" style="text-align: center;">IKKE JUKS!</div>
-<<<<<<< Updated upstream
-            <img src="img/misc/fengsel.jpg" style="width:294px;">
-            <p> Vi har nulltoleranse for juks og falske innsendinger. Tull kan lede til alvorlige konsekvenser!</p> <!-- Both of these are filler content.-->
-=======
             <img src="img/misc/fengsel.jpg" style="width:294px;" alt="Bilde av advarsel">
             <p> Vi har nulltoleranse for juks og falske innsendinger. Tull kan lede til alvorlige konsekvenser!</p>
->>>>>>> Stashed changes
         </div>
       </div>
 
