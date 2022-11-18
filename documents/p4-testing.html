@@ -1,96 +1,126 @@
 <!DOCTYPE html>
 <html lang="nb">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/p1234-style.css">
     <title>P4 • Testing</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-    <h1>P4 • Testing</h1>
+        <h1>P4 • Testing</h1>
     </header>
     <main>
-    <section>
-        <h2>1. Header</h2>
-        <p>P4: Project Testing</p>
-        <p>Date: 08.11.2022 </p>
-        <p>Gruppe 39: Bjørn Aslak Dallmann, Oskar Edvardsson, Martin Tryggestad Larsen, Håkon Wiland, Ingvild Engen Økland</p>
-    </section>
-    <section>
-        <h2>2. Administrative detaljer</h2>
-        <p>Fiktiv klient: Bodø Fiskeklubb</p>
-        <p>Kontakt: bodø@fiskeklubb.no</p>
-    </section>
-    <section>
-        <h2>3. Testingsdokument</h2>
-        <p>For testingen så lagde vi en Google form som testpersonene skulle svare på. Dette var
-            spørsmålene som ble stilt i spørreundersøkelsen:</p>
+        <section>
+            <h2>1. Header</h2>
+            <p>P4: Project Testing</p>
+            <p>Date: 08.11.2022 </p>
+            <p>Gruppe 39: Bjørn Aslak Dallmann, Oskar Edvardsson, Martin Tryggestad Larsen, Håkon Wiland, Ingvild Engen
+                Økland</p>
+        </section>
+        <section>
+            <h2>2. Administrative detaljer</h2>
+            <p>Fiktiv klient: Bodø Fiskeklubb</p>
+            <p>Kontakt: bodø@fiskeklubb.no</p>
+        </section>
+        <section>
+            <h2>3. Testingsdokument</h2>
+            <p>For testingen så lagde vi en Google form som testpersonene skulle svare på. Dette var
+                spørsmålene som ble stilt i spørreundersøkelsen:</p>
             <ul>
-              <li>Alder</li>
-              <li>Hvor often personen fisker</li>
-              <li>Hvor enkelt nettsiden var å navigere</li>
-              <li>Hvor godt de likte designet, med utdypning utdypende tekst</li>
-              <li>Hva personen ikke like med designet</li>
-              <li>I hvilken grad personen fant informasjonen på nettsiden nyttig</li>
-              <li>Forslag til endringer og/eller andre kommentarer</li>            
+                <li>Alder</li>
+                <li>Hvor often personen fisker</li>
+                <li>Hvor enkelt nettsiden var å navigere</li>
+                <li>Hvor godt de likte designet, med utdypende tekst</li>
+                <li>Hva personen ikke like med designet</li>
+                <li>I hvilken grad personen fant informasjonen på nettsiden nyttig</li>
+                <li>Forslag til endringer og/eller andre kommentarer</li>
             </ul>
-        <a href="https://forms.gle/tbutu46YX8Fi3bJA6">link til testskjemat vårt</a>
-        <p>
-            Spørreundersøkelsen forsøker i de første spørsmålene å kartlegge hvilken målgruppe personen tilhører. Videre baserer spørsmålene seg på sidens funksjonalitet og design. 
-            Spørsmålene er utformet med poengskala så vel som muligheten til å legge ved kommentar er til stede. Dette gjør at vi får et oversiktlig innblikk av respondentenes syn på siden, i tillegg til at man kan få forslag til endringer.
-            Vi fokuserte på å gjøre spørreundersøkelsen kort og enkel, for å gjøre terskelen for å teste siden lav. Siden er også av design minimalistisk, så omfanget av spørreundersøkelsen blir også deretter.           
-        </p>
-        <h3>Live-testing</h3>
-        <p>Live-testing ble utført ved at vi observerte mens respondentene utforsket nettsiden. Gjennom live-testingen så vi ingen tegn til at respondenten hadde problemer med å finne fram eller navigere til den siden han/hun ønsket. </p>
-    </section>
-    <section>
-        <h2>4. Testingsmålgruppe</h2>
-        <p>Ettersom at klienten vår er fiktiv, var det vanskelig å finne mange som passet målgruppen. Målgruppen er egentlig medlemmer/potensielle medlemmer av Bodø fiskeklubb.
-            De fleste vi fikk svar fra var derfor ikke innenfor det vi anser som målgruppen. Det var flere av de som svarte på undersøkelsen som fisket sjeldent om de i det heletatt fisket, men ettersom nettsiden er ment for å være for både erfarne fiskere (klubbrekorder,blogg og statistikk) samt helt ferske fiskere (utlån av utstyr og fiskearter med kart) betyr ikke det nødvendigvis at de faller utenfor målgruppen. For å få nok tilbakemeldinger til å ha et godt utvalg, valgte vi å starte testingen tidlig. 
-            
-         </p>
-        <p>Av de som svarte på undersøkelsen var det kunn 10% som fisket mer enn "noen ganger i året". De fleste var i aldersgruppen 21-25, og noen i aldersgruppene 26-30 og 51-60. 
-            Ettersom fiskeklubben er tenkt som et lavterskel tilbud for alle interessert i fiske, er ikke aldersgruppen det mest sentrale for brukergruppen.
-        </p>
-        <img class="tilbakemelding" src="assets/testing/alder.png" alt="Alder respondenter kakediagram">
-        <img class="tilbakemelding" src="assets/testing/fisker.png" alt="Hvor ofte fisker kakediagram" >
-    </section>
-    <section>
-        <h2>5. Testplattform</h2>
-        <p>Ettersom at nettsiden vår ikke er laget for mobile enheter, så ble respondentene anbefalt å teste på PC. 
- Nettsiden ble testet på følgende nettlesere: Google Chrome, Microsoft Edge og Safari. 
-            Tilbakemelding fra respondentene tilsier at det ikke forekom noen merkbar forskjell ved testing på ulike nettlesere.  
-        
-    </section>
-    <section>
-        <h2>6. Sammendrag tilbakemelding</h2>
-        <h3>Navigasjon</h3>
-            <p>De fleste tilbakemeldingene på navigasjonen var veldig positive. Ingen sa de syntes siden var vanskelig å navigere og som vist under var alle svarene mellom 3 og 5 på en skala fra 1 til 5.
-                Vi fikk noen tilbakemeldinger om plasseringen av navigasjonsbar på forsiden som vi kommer tilbake til senere.
-                <br>Under live-testing fikk vi også inntrykk av at det ikke var vanskelig å finne fram til informasjonen man ønsket, og brukerne kom seg vanligvis dit de skulle på færrest mulige antall klikk.
-                
+            <a href="https://forms.gle/tbutu46YX8Fi3bJA6">link til testskjemat vårt</a>
+            <p>
+                Spørreundersøkelsen forsøker i de første spørsmålene å kartlegge hvilken målgruppe personen tilhører.
+                Videre baserer spørsmålene seg på sidens funksjonalitet og design.
+                Spørsmålene er utformet med poengskala så vel som muligheten til å legge ved kommentar er til stede.
+                Dette gjør at vi får et oversiktlig innblikk av respondentenes syn på siden, i tillegg til at man kan få
+                forslag til endringer.
+                Vi fokuserte på å gjøre spørreundersøkelsen kort og enkel, for å gjøre terskelen for å teste siden lav.
+                Siden er også av design minimalistisk, så omfanget av spørreundersøkelsen blir også deretter.
+            </p>
+            <h3>Live-testing</h3>
+            <p>Live-testing ble utført ved at vi observerte mens respondentene utforsket nettsiden. Gjennom
+                live-testingen så vi ingen tegn til at respondenten hadde problemer med å finne fram eller navigere til
+                den siden han/hun ønsket.
+
+            </p>
+        </section>
+        <section>
+            <h2>4. Testingsmålgruppe</h2>
+            <p>Ettersom at klienten vår er fiktiv, var det vanskelig å finne mange som passet målgruppen. Målgruppen er
+                egentlig medlemmer/potensielle medlemmer av Bodø fiskeklubb.
+                De fleste vi fikk svar fra var derfor ikke innenfor det vi anser som målgruppen. Det var flere av de som
+                svarte på undersøkelsen som fisket sjeldent om de i det heletatt fisket, men ettersom nettsiden er ment
+                for å være for både erfarne fiskere (klubbrekorder,blogg og statistikk) samt helt ferske fiskere (utlån
+                av utstyr og fiskearter med kart) betyr ikke det nødvendigvis at de faller utenfor målgruppen. For å få
+                nok tilbakemeldinger til å ha et godt utvalg, valgte vi å starte testingen tidlig.
+
+            </p>
+            <p>Av de som svarte på undersøkelsen var det kunn 10% som fisket mer enn "noen ganger i året". De fleste var
+                i aldersgruppen 21-25, og noen i aldersgruppene 26-30 og 51-60.
+                Ettersom fiskeklubben er tenkt som et lavterskel tilbud for alle interessert i fiske, er ikke
+                aldersgruppen det mest sentrale for brukergruppen.
+            </p>
+            <img class="tilbakemelding" src="assets/testing/alder.png" alt="Alder respondenter kakediagram">
+            <img class="tilbakemelding" src="assets/testing/fisker.png" alt="Hvor ofte fisker kakediagram">
+        </section>
+        <section>
+            <h2>5. Testplattform</h2>
+            <p>Ettersom at nettsiden vår ikke er laget for mobile enheter, så ble respondentene anbefalt å teste på PC.
+                Nettsiden ble testet på følgende nettlesere: Google Chrome, Microsoft Edge og Safari.
+                Tilbakemelding fra respondentene tilsier at det ikke forekom noen merkbar forskjell ved testing på ulike
+                nettlesere.
+
+        </section>
+        <section>
+            <h2>6. Sammendrag tilbakemelding</h2>
+            <h3>Navigasjon</h3>
+            <p>De fleste tilbakemeldingene på navigasjonen var veldig positive. Ingen sa de syntes siden var vanskelig å
+                navigere og som vist under var alle svarene mellom 3 og 5 på en skala fra 1 til 5.
+                Vi fikk noen tilbakemeldinger om plasseringen av navigasjonsbar på forsiden som vi kommer tilbake til
+                senere.
+                <br>Under live-testing fikk vi også inntrykk av at det ikke var vanskelig å finne fram til informasjonen
+                man ønsket, og brukerne kom seg vanligvis dit de skulle på færrest mulige antall klikk.
+
             </p>
             <img class="tilbakemelding" src="assets/testing/navigasjon.png" alt="Tilbakemelding navigasjon">
-        <h3>Design</h3>
+            <h3>Design</h3>
             <p>
-            Respondentene meldte at de stort sett var fornøyde med designet i sin helhet. Som vist i diagramet under ga de fleste designet 4, og ingen ga mindre enn 3, på en skala fra 1 til 5. 
-            Designet var likevel det temaet vi fikk flest tilbakemeldinger med forslag til endringer. Både under livetesting og på tilbakemeldingene til skjemaet fikk vi inn kommentarer og endringsforslag om alt fra tekstutforming og skrifttype til fargevalg og logo.
+                Respondentene meldte at de stort sett var fornøyde med designet i sin helhet. Som vist i diagramet under
+                ga de fleste designet 4, og ingen ga mindre enn 3, på en skala fra 1 til 5.
+                Designet var likevel det temaet vi fikk flest tilbakemeldinger med forslag til endringer. Både under
+                livetesting og på tilbakemeldingene til skjemaet fikk vi inn kommentarer og endringsforslag om alt fra
+                tekstutforming og skrifttype til fargevalg og logo.
             </p>
             <img class="tilbakemelding" src="assets/testing/design.png" alt="Tilbakemelding design">
-        <h3>Innhold </h3>
+            <h3>Innhold </h3>
             <p>
-            På spørsmål om informajsonen virket nyttig fikk vi den største variajsjonen i svarene. Som vist i søylediagramet svarte de fleste at informasjonen framstilt virket svært nyttig, mens én respondent svarte at informasjonen virket helt unyttig. 
-            En mulig feilkilde for dette spørsmålet er at det ikke ble presisert for alle testerne at man skulle se bort fra latin i brødtekster og heller forholde seg til de overordnede temaene. 
-            Av endringsforslagene vi fikk var det ett forslag som gikk ut på å legge til/endre innholdet.
+                På spørsmål om informajsonen virket nyttig fikk vi den største variajsjonen i svarene. Som vist i
+                søylediagramet svarte de fleste at informasjonen framstilt virket svært nyttig, mens én respondent
+                svarte at informasjonen virket helt unyttig.
+                En mulig feilkilde for dette spørsmålet er at det ikke ble presisert for alle testerne at man skulle se
+                bort fra latin i brødtekster og heller forholde seg til de overordnede temaene.
+                Av endringsforslagene vi fikk var det ett forslag som gikk ut på å legge til/endre innholdet.
             </p>
             <img class="tilbakemelding" src="assets/testing/innhold.png" alt="Tilbakemelding innhold">
         </section>
-    <section id="respons">
-        <h2>7. Vår respons</h2>
+        <section id="respons">
+            <h2>7. Vår respons</h2>
             <p>
-            Når vi ser på tilbakemeldingene på undersøkelsen, går det igjen at nettsidens design kunne vært forbedret. Generell utforming av tekst, fargekombinasjoner og estetikk kunne man gjerne endret, selv om siden har som mål å være minimalistisk.
-            <br>
+                Når vi ser på tilbakemeldingene på undersøkelsen, går det igjen at nettsidens design kunne vært
+                forbedret. Generell utforming av tekst, fargekombinasjoner og estetikk kunne man gjerne endret, selv om
+                siden har som mål å være minimalistisk.
+                <br>
             <ul>Forslag til endringer som ble implementert etter testing:
                 <li>Endre tekstlogo fra svart til hvitt</li>
                 <li>Større mellomrom mellom header og innhold på delsider</li>
@@ -106,20 +136,25 @@
                 <li>Større bilder</li>
                 <li>Legge til informasjon om arrangement, lovverk, andre nettsider o.l.</li>
             </ul>
-        </p>
-    </section>
-    <section>
-        <h2>8. Selvrefleksjon</h2>
-            <p>Vi lærte oss mye forskjellig under dette prosjektet. Fremfor alt lærte vi hvordan man lager en nettside 
-            fra bunnen av. Videre så utdypet vi vår kunnskap i HTML, CSS og Javascript.
-            Før vi begynte hadde vi ganske ulikt utgangspunkt med tanke på erfaring i webteknologi, og vi var sterke og svake på ulike 
-            områder, så vi har lært mye av hverandre.
-           <br>For versjonshåndtering så brukte vi GitHub under prosjektet. I utgangspunktet følte vi det var litt vanskelig å bruke,
-            men videre inn i prosjektet så lærte vi oss mer om det og til slutt syntes vi at det var et veldig nyttig verktøy.
-            Som i alle gruppearbeid så fikk vi også trene på å samarbeide, planlegging og kommunikasjon innad i gruppa. 
             </p>
-    </section>
+        </section>
+        <section>
+            <h2>8. Selvrefleksjon</h2>
+            <p>Vi lærte oss mye forskjellig under dette prosjektet. Fremfor alt lærte vi hvordan man lager en nettside
+                fra bunnen av. Videre så utdypet vi vår kunnskap i HTML, CSS og Javascript.
+                Før vi begynte hadde vi ganske ulikt utgangspunkt med tanke på erfaring i webteknologi, og vi var sterke
+                og svake på ulike
+                områder, så vi har lært mye av hverandre.
+                <br>For versjonshåndtering så brukte vi GitHub under prosjektet. I utgangspunktet følte vi det var litt
+                vanskelig å bruke,
+                men videre inn i prosjektet så lærte vi oss mer om det og til slutt syntes vi at det var et veldig
+                nyttig verktøy.
+                Som i alle gruppearbeid så fikk vi også trene på å samarbeide, planlegging og kommunikasjon innad i
+                gruppa.
+            </p>
+        </section>
 
     </main>
-  </body>
+</body>
+
 </html>
