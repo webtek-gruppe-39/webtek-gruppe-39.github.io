@@ -89,22 +89,23 @@
       <p>Martin lagde en javascript til klubbstatistikk hvor man kunne sende in nye klubbrekorder, lignende</p>
       <p>Oskar lagde en javascript til utlån av fiskeutstyr hvor man kunne få informasjon om utstyret hvis man klikker på den</p>
       <p>Håkon lagde en javascript til fiskearter som viste et fiskekart hvis man klikket på en knapp</p>
-      <p>Bjørn Aslak gjorde bildegalleriet interaktivt (klikk for fullskjerm), skrev scriptet som legger in header og footer i hver temaside, samt genererer temasidene 'Bli medlem' og 'Blogg' med Javascript.</p>
+      <p>Bjørn Aslak gjorde bildegalleriet interaktivt (klikk for fullskjerm), skrev scriptet som legger in header og footer i hver temaside (krav om <em>modularitet</em>), samt genererer temasidene 'Bli medlem' og 'Blogg' med Javascript.</p>
       <p>Ingvild lagde en brukerdefinert javascript til forsida som fikk logoen til å bevege seg</p>
     </section>
 
-    <section>
+    <section class="fileStructure">
         <h2>5. Filstruktur</h2>
+        <p>Endelig filstruktur under mappen 'product':</p>
         <ul>
-          <li>CSS</li>
+          <li>css/</li>
           <ul>
             <li>bli_medlem_og_blogg_stylig.css</li>
             <li>felles_styling.css</li>
             <li>forside_styling.css</li>
           </ul>
-          <li>img
+          <li>img/
             <ul>
-              <li>bildegalleri</li>
+              <li>bildegalleri/</li>
               <ul>
                 <li>1.jpg</li>
                 <li>2.jpg</li>
@@ -116,14 +117,18 @@
                 <li>8.jpg</li>
                 <li>9.jpg</li>
               </ul>
-              
-              <li>fisk</li>
+              <li>fisk/</li>
               <ul>
                 <li>kveite.png</li>
                 <li>makrell.png</li>
-                <li></li>
+                <li>orret.png</li>
+                <li>sei.png</li>
+                <li>torsk.png</li>
               </ul>
-              <li>footer</li>
+              <li>footer/</li>
+              <ul>
+                <li>logo-instagram.png</li>
+              </ul>
               <li>forside</li>
               <li>icon</li>
               <li>kart</li>
@@ -134,21 +139,20 @@
               <li>storfangs.png</li>
             </ul>
           </li>
-          <li>js
+          <li>js/
             <ul>
-              <li>interactivity</li>
+              <li>interactivity/</li>
               <ul>
                 <li>enlarge-image.js</li>
                 <li>fiskekart.js</li>
                 <li>move_fisk.js</li>
                 <li>utstyr.js</li>
               </ul>
-             
-              <li>modules</li>
+              <li>modules/</li>
               <ul>
                 <li>mini-lib.js</li>
               </ul>
-              <li>page-builders</li>
+              <li>page-builders/</li>
               <ul>
                 <li>add_header_footer.js</li>
                 <li>build_bli_medlem.js</li>
@@ -165,7 +169,6 @@
           <li>om_klubben.html</li>
           <li>utlaan_utstyr.hmtl</li>
         </ul>
-
     </section>
 
     <section>
@@ -253,8 +256,8 @@
           </tr>
           <tr>
               <td>fiskekart.js</td>
-              <td>...beskrivelse...</td>
-              <td>...ansvar...</td>
+              <td>Implementering av knapper som åpner og lukker kart med markeringer for ulike fiskeartert.</td>
+              <td>Håkon</td>
           </tr>
           <tr>
             <td>Sy sammen filer</td>

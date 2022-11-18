@@ -40,6 +40,31 @@ p, li {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td { padding: 0.25rem; }
+
+img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+
+.kreds {
+  font-style: italic;
+}
+
+.tilbakemelding{
+  width: 80%;
+  padding-left:10%;
+  padding-right: 10%;
+}
+
+.fileStructure li { list-style: none; }
+
 #respons li {
   font-size: 1em;
   font-weight: lighter;
@@ -50,24 +75,3 @@ p, li {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.tilbakemelding{
-  width: 80%;
-  padding-left:10%;
-  padding-right: 10%;
-}
-
-img {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-
-.kreds {
-  font-style: italic;
-}
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-td { padding: 0.25rem; }
